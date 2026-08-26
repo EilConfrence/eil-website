@@ -611,18 +611,18 @@
   .site-nav.is-compact .nav-main{ @apply hidden; }
   .site-nav.is-compact .nav-compact{ @apply block; }
   .nav-count{
-    @apply flex items-center gap-1.5 rounded-xl border border-violet/15 bg-violet/[0.06] px-2.5 py-1.5;
+    @apply flex items-center gap-1.5 rounded-xl border border-navy/15 bg-navy/[0.06] px-2.5 py-1.5;
   }
   .nav-count-cell{
     @apply flex min-w-[2.4rem] flex-col items-center leading-none;
   }
   .nav-count-cell strong{
-    @apply font-display text-sm font-bold tabular-nums text-violet;
+    @apply font-display text-sm font-bold tabular-nums text-navy;
   }
   .nav-count-cell span{
-    @apply mt-0.5 text-[9px] font-sans font-medium capitalize tracking-wide text-ink-soft;
+    @apply mt-0.5 text-[9px] font-sans font-medium capitalize tracking-wide text-navy/55;
   }
-  .nav-count-sep{ @apply pb-2.5 text-xs font-bold text-violet/40; }
+  .nav-count-sep{ @apply pb-2.5 text-xs font-bold text-navy/30; }
   .nav-compact-links{ @apply hidden items-center gap-8 lg:flex; }
 
   .partner-slot{
