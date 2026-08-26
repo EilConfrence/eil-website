@@ -6,10 +6,15 @@
 <title>EIL Conference 2026 - Education Leaders &amp; Career Counsellors Summit | 18-19 Sep, Gurugram</title>
 <meta name="description" content="A national conference for education leaders and career counsellors. 18-19 September 2026, Radisson Hotel, Udyog Vihar, Gurugram.">
 
+<link rel="canonical" href="https://eilconference.com/">
+<meta name="theme-color" content="#0B3D2E">
 <meta property="og:title" content="EIL Conference 2026 - Education Leaders &amp; Career Counsellors Summit">
 <meta property="og:description" content="A national conference for education leaders and career counsellors. 18-19 September 2026, Radisson Hotel, Gurugram.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://eilconference.com/">
+<meta property="og:image" content="https://eilconference.com/images/hero-conference.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://eilconference.com/images/hero-conference.jpg">
 <meta name="twitter:title" content="EIL Conference 2026 - Education Leaders &amp; Career Counsellors Summit">
 <meta name="twitter:description" content="A national conference for education leaders and career counsellors. 18-19 September 2026, Radisson Hotel, Gurugram.">
 
@@ -36,16 +41,11 @@
 }
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-
+<link rel="preload" href="./fonts/satoshi-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./fonts/satoshi-medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./fonts/satoshi-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./images/hero-conference.jpg" as="image">
 <style>
-  @font-face{
-    font-family:'Satoshi';
-    src:url('./fonts/satoshi-light.woff2') format('woff2');
-    font-weight:300; font-style:normal; font-display:swap;
-  }
   @font-face{
     font-family:'Satoshi';
     src:url('./fonts/satoshi-regular.woff2') format('woff2');
@@ -59,8 +59,9 @@
   @font-face{
     font-family:'Satoshi';
     src:url('./fonts/satoshi-bold.woff2') format('woff2');
-    font-weight:700; font-style:normal; font-display:swap;
+    font-weight:600 800; font-style:normal; font-display:swap;
   }
+  html, body { font-family:'Satoshi', ui-sans-serif, system-ui, sans-serif; }
 </style>
 
 <style>
@@ -68,720 +69,24 @@
 </style>
 <link rel="stylesheet" href="./css/eil.built.css">
 
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-<style type="text/tailwindcss">
-/* =========================================================
-   EIL CONFERENCE 2026 - TAILWIND THEME
-   Display: Satoshi (OneRoadmap)
-   Body/UI: Inter
-   Data:    IBM Plex Mono
-   ========================================================= */
-
-@theme {
-  /* ---------- Palette (brochure: forest green + lime → cyan) ---------- */
-  --color-navy: #0B3D2E;
-  --color-navy-700: #0F4A38;
-  --color-navy-600: #145C46;
-  --color-gold: #A2D729;
-  --color-gold-light: #C5E85A;
-  --color-coral: #00AEEF;
-  --color-coral-deep: #0090C5;
-  --color-violet: #00AEEF;
-  --color-violet-light: #4DC8F5;
-  --color-violet-mist: #A8E6F5;
-  --color-violet-border: #0B6B7A;
-  --color-violet-ink: #063540;
-  --color-blue: #00AEEF;
-  --color-blue-deep: #0090C5;
-  --color-pink: #A2D729;
-  --color-pink-light: #B8E04A;
-  --color-cream: #F5F9F6;
-  --color-paper: #FFFFFF;
-  --color-ink: #111827;
-  --color-ink-soft: #374151;
-  --color-slate: #D1D5DB;
-  --color-positive: #3E8E5C;
-  --color-line: rgba(17,24,39,0.10);
-  --color-line-dark: rgba(255,255,255,0.10);
-  --color-line-warm: rgba(0,174,239,0.28);
-
-  /* ---------- Shadows ---------- */
-  --shadow-warm-sm: 0 1px 2px rgba(0,0,0,0.04), 0 12px 28px -18px rgba(0,0,0,0.12);
-  --shadow-warm-md: 0 4px 10px rgba(0,0,0,0.05), 0 24px 48px -24px rgba(0,0,0,0.18);
-  --shadow-warm-dark: 0 24px 60px -20px rgba(0,0,0,0.55), 0 1px 0 rgba(255,255,255,0.04) inset;
-
-  /* ---------- Families ---------- */
-  --font-sans:'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display:'Satoshi', 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-mono:'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-  --font-syne:'Satoshi', 'Inter', ui-sans-serif, system-ui, sans-serif;
-
-  /* ---------- Type scale ---------- */
-  --text-3xs:0.625rem;
-  --text-3xs--line-height:1.4;
-  --text-2xs:0.6875rem;
-  --text-2xs--line-height:1.4;
-  --text-xs:0.75rem;
-  --text-xs--line-height:1.45;
-  --text-sm:0.8125rem;
-  --text-sm--line-height:1.55;
-  --text-base:0.875rem;
-  --text-base--line-height:1.55;
-  --text-base--letter-spacing:-0.006em;
-  --text-md:clamp(0.9375rem, 0.91rem + 0.11vw, 1rem);
-  --text-md--line-height:1.5;
-  --text-md--letter-spacing:-0.006em;
-  --text-body:clamp(1rem, 0.97rem + 0.11vw, 1.0625rem);
-  --text-body--line-height:1.62;
-  --text-body--letter-spacing:-0.006em;
-  --text-lg:clamp(1.0625rem, 1rem + 0.22vw, 1.1875rem);
-  --text-lg--line-height:1.58;
-  --text-lg--letter-spacing:-0.006em;
-  --text-xl:clamp(1.1875rem, 1.11rem + 0.22vw, 1.3125rem);
-  --text-xl--line-height:1.3;
-  --text-xl--letter-spacing:-0.015em;
-  --text-2xl:clamp(1.375rem, 1.24rem + 0.33vw, 1.5625rem);
-  --text-2xl--line-height:1.24;
-  --text-2xl--letter-spacing:-0.015em;
-  --text-3xl:clamp(1.375rem, 1.22rem + 0.55vw, 1.75rem);
-  --text-3xl--line-height:1.2;
-  --text-3xl--letter-spacing:-0.02em;
-  --text-4xl:clamp(1.5rem, 1.28rem + 0.85vw, 2rem);
-  --text-4xl--line-height:1.18;
-  --text-4xl--letter-spacing:-0.022em;
-  --text-5xl:clamp(1.75rem, 1.4rem + 1.3vw, 2.5rem);
-  --text-5xl--line-height:1.12;
-  --text-5xl--letter-spacing:-0.025em;
-  --text-6xl:clamp(2rem, 1.5rem + 1.8vw, 3rem);
-  --text-6xl--line-height:1.1;
-  --text-6xl--letter-spacing:-0.028em;
-
-  /* ---------- Tracking ---------- */
-  --tracking-tight:-0.015em;
-  --tracking-wide:0.06em;
-  --tracking-caps:0.12em;
-  --tracking-eyebrow:0.14em;
-
-  /* ---------- Radii, shadows, container ---------- */
-  --radius-card:20px;
-  --radius-panel:14px;
-  --radius-field:10px;
-  --shadow-card:0 1px 2px rgba(0,0,0,0.04), 0 12px 32px -16px rgba(0,0,0,0.12);
-  --shadow-lift:0 30px 70px -25px rgba(0,0,0,0.5);
-  --shadow-gold:0 12px 24px -10px rgba(0,174,239,0.35);
-  --shadow-nav:0 1px 0 rgba(255,255,255,0.06), 0 24px 48px -32px rgba(0,0,0,0.45);
-  --shadow-menu:0 28px 56px -28px rgba(0,0,0,0.5);
-  --shadow-hero:0 24px 60px -20px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.04) inset;
-  --shadow-logo:0 6px 16px -6px rgba(0,174,239,0.45), inset 0 1px 0 rgba(255,255,255,0.3);
-  --shadow-logo-lift:0 8px 20px -6px rgba(0,174,239,0.55), inset 0 1px 0 rgba(255,255,255,0.35);
-  --shadow-cta:0 10px 15px -3px rgba(0,174,239,0.28), 0 4px 6px -4px rgba(0,174,239,0.22);
-  --shadow-cta-ghost:0 10px 26px -16px rgba(0,174,239,0.35);
-  --shadow-tag:0 4px 12px -4px rgba(0,0,0,0.35);
-  --shadow-plan:0 24px 60px -20px rgba(0,0,0,0.5);
-  --shadow-badge:0 10px 24px -8px rgba(0,174,239,0.35), 0 0 0 4px var(--color-paper);
-  --shadow-chip:0 10px 22px -14px rgba(14,26,43,0.22);
-
-  --ease-lift:cubic-bezier(.22,1,.36,1);
-  --container-page:1180px;
-}
-
-/* The browser build compiles from classes it can see in the markup, so any
-   utility that only ever arrives via JS has to be declared here. */
-@source inline("grid-rows-[1fr] rotate-45 flex");
-
-@layer base {
-  body{
-    font-feature-settings:'cv05' 1, 'cv08' 1;
-  }
-  h1, h2, h3, h4{
-    font-family:var(--font-display);
-    font-weight:500;
-    letter-spacing:-0.02em;
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    *{
-      animation-duration:0.001ms !important;
-      animation-iteration-count:1 !important;
-      transition-duration:0.001ms !important;
-      scroll-behavior:auto !important;
-    }
-  }
-}
-
-/* Component classes cover the patterns that repeat across the page; everything
-   else is composed with utilities in the markup. Raw declarations appear only
-   where Tailwind has no equivalent: variable-font axes, vendor-prefixed
-   properties, and the @supports fallback for gradient-filled text.
-
-   Hover styling is written with plain `hover:` variants - Tailwind v4 already
-   scopes those to `@media (hover:hover)`, so a tap never leaves a card stuck
-   in its lifted state. */
-@layer components {
-  .shell{ @apply mx-auto w-full max-w-page px-5 md:px-8; }
-
-  /* ---------- Layout rhythm ---------- */
-  .section{ @apply py-14 lg:py-16; }
-  .section-head{ @apply mb-7 max-w-[34rem]; }
-  .section-head-center{ @apply mx-auto mb-7 max-w-[34rem] text-center; }
-  .section-title{ @apply font-display text-[1.55rem] font-bold leading-snug tracking-tight text-balance text-ink sm:text-[1.7rem] lg:text-[1.85rem]; }
-  .section-title-light{ @apply font-display text-[1.55rem] font-bold leading-snug tracking-tight text-balance text-white sm:text-[1.7rem] lg:text-[1.85rem]; }
-  .section-lead{ @apply mt-3 text-[0.95rem] leading-relaxed text-pretty text-ink-soft; }
-  .section-lead-light{ @apply mt-3 text-[0.95rem] leading-relaxed text-pretty text-[#D1D5DB]; }
-  .hero{ @apply relative overflow-hidden bg-black pt-20 pb-16 lg:pt-28 lg:pb-24; }
-  .hero-photo{
-    @apply pointer-events-none absolute inset-0 z-0 bg-cover bg-center;
-    background-image:url('./images/hero-conference.jpg');
-    filter:blur(6px) saturate(0.9);
-    transform:scale(1.08);
-  }
-  .hero-veil{
-    @apply pointer-events-none absolute inset-0 z-0;
-    background:
-      linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(8,8,10,0.35) 45%, rgba(0,0,0,0.62) 100%),
-      linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.18) 55%, rgba(0,0,0,0.4) 100%);
-  }
-  .hero-title{ @apply font-display text-[1.85rem] font-bold leading-[1.15] tracking-tight text-balance sm:text-[2.2rem] lg:text-[2.7rem]; }
-  .hero-metric{
-    @apply flex h-full min-h-[5.5rem] flex-col items-center justify-center rounded-xl
-           border border-white/8 bg-white/[0.06] px-3 py-4 text-center;
-  }
-  .hero-metric-num{
-    @apply font-display text-[1.85rem] font-bold leading-none tabular-nums
-           tracking-[-0.04em] text-white lg:text-[2.15rem];
-  }
-  .page-hero{ @apply relative overflow-hidden bg-navy pt-14 pb-12 lg:pt-16 lg:pb-14; }
-  .page-hero-title{ @apply font-display text-[1.55rem] font-bold leading-snug tracking-tight text-balance text-white sm:text-[1.7rem] lg:text-[1.85rem]; }
-
-  .display-italic{
-    @apply font-display font-medium tracking-tight text-violet;
-  }
-
-  .eyebrow{
-    @apply mb-[18px] inline-flex items-center gap-2.5 font-mono text-xs font-medium
-           uppercase tracking-eyebrow;
-  }
-  .eyebrow::before{ @apply inline-block h-px w-[22px] bg-current content-['']; }
-
-  .label{ @apply font-mono text-2xs font-medium uppercase tracking-caps; }
-
-  /* ---------- Badges: Forage-style announcement pill ----------
-     Structure: [dot] KICKER · Title - cta →
-     Themes: .badge-dark (navy sections) · .badge-light (paper/cream) */
-  .badge{
-    @apply inline-flex max-w-full items-center gap-2 rounded-full border px-[18px] py-[9px]
-           font-sans text-[13px] leading-none tracking-[-0.01em] whitespace-nowrap
-           backdrop-blur-[10px] transition duration-200 ease-out;
-  }
-  @media (max-width: 640px){
-    .badge{ @apply max-w-full gap-1.5 px-3.5 py-2 text-xs; }
-    .badge .badge-arrow{ @apply hidden; }
-  }
-  .badge-dot{
-    @apply relative inline-flex size-[7px] shrink-0 rounded-full;
-    box-shadow:0 0 0 3px color-mix(in srgb, currentColor 28%, transparent),
-               0 0 10px color-mix(in srgb, currentColor 55%, transparent);
-    animation: badge-dot-core 2.2s ease-in-out infinite;
-  }
-  .badge-dot::before{
-    content:'';
-    @apply absolute -inset-[4px] rounded-full bg-current opacity-40;
-    animation: badge-dot-ping 2.2s ease-out infinite;
-  }
-  @keyframes badge-dot-core{ 0%,100%{ opacity:1; } 50%{ opacity:0.72; } }
-  @keyframes badge-dot-ping{
-    0%{ transform:scale(0.45); opacity:0.45; }
-    100%{ transform:scale(1.85); opacity:0; }
-  }
-  .badge-kicker{
-    @apply shrink-0 font-medium uppercase tracking-[0.08em];
-  }
-  .badge-sep,
-  .badge-dash{
-    @apply shrink-0 opacity-80;
-  }
-  .badge-title{
-    @apply font-medium text-pretty;
-  }
-  .badge-cta{
-    @apply shrink-0 font-normal;
-  }
-  .badge-cta.lowercase{ @apply lowercase; }
-  .badge-arrow{
-    @apply shrink-0 translate-y-px text-[14px] leading-none;
-  }
-
-  /* Dark theme - navy headers / dark canvases */
-  .badge-dark{
-    @apply border-gold/25 bg-navy-700/80 text-gold
-           shadow-[0_0_0_1px_rgba(162,215,41,0.06)];
-  }
-  .badge-dark .badge-dot{ @apply bg-gold text-gold; }
-  .badge-dark .badge-kicker,
-  .badge-dark .badge-sep,
-  .badge-dark .badge-dash,
-  .badge-dark .badge-cta,
-  .badge-dark .badge-arrow,
-  .badge-dark .badge-title{ @apply text-white; }
-  a.badge-dark:hover{
-    @apply border-gold/50 bg-navy-700;
-  }
-
-  /* Light theme - paper / cream / white sections */
-  .badge-light{
-    @apply border-navy/15 bg-cream text-navy
-           shadow-none;
-  }
-  .badge-light .badge-dot{ @apply bg-gold text-gold; }
-  .badge-light .badge-kicker,
-  .badge-light .badge-sep,
-  .badge-light .badge-dash,
-  .badge-light .badge-cta,
-  .badge-light .badge-arrow{ @apply text-navy/70; }
-  .badge-light .badge-title{ @apply text-ink; }
-  a.badge-light:hover{
-    @apply border-navy/25 bg-white;
-  }
-
-  .badge-violet{ @apply border-violet/25 bg-violet/[0.08] text-violet; }
-  .badge-violet .badge-dot{ @apply bg-violet text-violet; }
-  .badge-pink{ @apply border-pink/25 bg-pink/5 text-pink; }
-  .badge-pink .badge-dot{ @apply bg-pink text-pink; }
-  .badge-neutral{ @apply border-line bg-white/80 text-ink-soft; }
-  .badge-neutral .badge-dot{ @apply bg-ink-soft text-ink-soft; }
-
-  /* Gradient-filled text. Tailwind handles the clip and the transparent fill;
-     the @supports guard and -webkit fallback keep solid gold on engines that
-     cannot clip a background to glyphs. */
-  .text-gold-foil{ color:var(--color-gold-light); }
-  @supports ((-webkit-background-clip:text) or (background-clip:text)){
-    .text-gold-foil{
-      @apply bg-linear-[115deg,#F3D99B_0%,var(--color-gold)_32%,var(--color-gold-light)_58%,#F8ECC2_100%]
-             bg-clip-text text-transparent;
-      -webkit-text-fill-color:transparent;
-    }
-  }
-
-  /* OneRoadmap gradient: violet → blue */
-  .text-gradient-brand{ color:var(--color-violet); }
-  @supports ((-webkit-background-clip:text) or (background-clip:text)){
-    .text-gradient-brand{
-      @apply bg-linear-[115deg,#A2D729_0%,#00AEEF_45%,#00AEEF_100%]
-             bg-clip-text text-transparent;
-      -webkit-text-fill-color:transparent;
-    }
-  }
-
-  /* ---------- Buttons ---------- */
-  .btn{
-    @apply relative inline-flex cursor-pointer items-center justify-center gap-2 overflow-hidden
-           whitespace-nowrap rounded-lg border border-transparent px-7 py-[14px]
-           font-sans text-sm font-medium leading-tight
-           transition-[transform,box-shadow,border-color,background-color] duration-500 ease-lift
-           hover:-translate-y-px active:translate-y-0;
-  }
-  .btn::after{
-    content:'';
-    @apply pointer-events-none absolute inset-0;
-    background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,0.22) 50%,transparent 62%);
-    transform:translateX(-140%);
-    transition:transform 0.75s cubic-bezier(.22,1,.36,1);
-  }
-  .btn:hover::after{ transform:translateX(140%); }
-  @media (prefers-reduced-motion: reduce){
-    .btn{ @apply transition-none hover:translate-y-0; }
-    .btn::after{ @apply hidden; }
-  }
-  .btn-sm{ @apply px-5 py-[10px] text-sm; }
-  .btn-block{ @apply w-full; }
-  .btn-primary,
-  .btn-violet{
-    @apply bg-navy text-white shadow-[0_10px_22px_-8px_rgba(11,61,46,0.4)]
-           hover:bg-navy-700 hover:shadow-[0_12px_28px_-10px_rgba(11,61,46,0.5)];
-  }
-  .bg-navy .btn-primary,
-  .bg-navy .btn-violet{
-    @apply bg-gold text-navy shadow-[0_10px_22px_-8px_rgba(162,215,41,0.45)]
-           hover:bg-gold-light hover:shadow-[0_12px_28px_-10px_rgba(162,215,41,0.5)];
-  }
-  .btn-ghost-dark{ @apply border-white/20 text-white hover:border-white/40 hover:bg-white/[0.06]; }
-  .btn-ghost-light{ @apply border-ink/15 text-ink hover:border-ink/25 hover:bg-ink/[0.04]; }
-  .btn-shine{ @apply relative overflow-hidden; }
-
-  /* ---------- Cards ---------- */
-  .card{ @apply rounded-2xl border border-line bg-paper p-6 shadow-card; }
-  .card-dark{ @apply rounded-2xl border border-white/10 bg-navy-700 p-6 shadow-warm-dark; }
-  /* Opt-in hover lift, added alongside .card. */
-  .card-lift{
-    @apply transition duration-300 ease-lift hover:-translate-y-0.5 hover:border-violet/20 hover:shadow-warm-md;
-  }
-
-  .pill{
-    @apply inline-flex items-center gap-2 rounded-full border border-line bg-white
-           px-3.5 py-2 text-sm font-medium text-ink;
-  }
-  .dot{ @apply size-1.5 shrink-0 rounded-full bg-violet; }
-
-  .stat-card{
-    @apply flex h-full flex-col rounded-2xl border border-line bg-white p-4
-           transition duration-300 hover:border-violet/20;
-  }
-  .stat-num{
-    @apply mb-2 font-display text-[2.1rem] font-bold leading-none tabular-nums
-           tracking-[-0.04em] text-violet lg:text-[2.4rem];
-  }
-  .stat-label{ @apply mb-0.5 text-[13px] font-semibold leading-snug text-balance text-ink; }
-  .stat-sub{ @apply text-[12px] leading-snug text-ink-soft; }
-  .stat-source{
-    @apply mt-auto border-t border-line pt-2.5 font-sans text-[11px] text-ink-soft;
-  }
-
-
-  .format-card{
-    @apply flex h-full flex-col rounded-2xl border border-line bg-white p-5
-           transition duration-300 hover:border-violet/20;
-  }
-  .format-icon{
-    @apply flex size-7 shrink-0 items-center justify-center rounded-lg bg-gold/15 text-navy;
-  }
-  .format-heading{
-    @apply mb-3 flex items-center gap-2.5 font-display text-base font-bold text-ink;
-  }
-  .check-li{
-    @apply flex items-start gap-2 text-sm leading-snug text-ink-soft;
-  }
-  .check-mark{
-    @apply mt-0.5 inline-flex size-[15px] shrink-0 items-center justify-center rounded-full
-           bg-gold/20 font-sans text-[9px] font-bold leading-none text-navy;
-  }
-  .format-outcome{
-    @apply mt-auto border-t border-line pt-3.5 text-sm leading-snug text-ink-soft;
-  }
-  .format-outcome strong{
-    @apply font-display font-bold text-ink;
-  }
-
-  .outcome-panel{
-    @apply mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4;
-  }
-  .outcome-cell{
-    @apply rounded-2xl border border-violet/12 bg-[#F8F7FF] p-5;
-  }
-  .outcome-icon{
-    @apply mb-3 flex size-9 items-center justify-center rounded-xl bg-white text-violet
-           shadow-[0_1px_0_rgba(109,40,217,0.08)];
-  }
-  .outcome-title{
-    @apply mb-1.5 font-display text-sm font-bold text-ink;
-  }
-
-  .why-backdrop{
-    @apply pointer-events-none absolute inset-0 overflow-hidden;
-    background: radial-gradient(ellipse 48% 72% at 50% 50%, rgba(162,215,41,0.08), transparent 68%);
-  }
-  .why-backdrop svg{
-    @apply absolute left-1/2 top-1/2 h-[140%] w-[min(92rem,160%)] -translate-x-1/2 -translate-y-1/2;
-  }
-  .role-shift-card{
-    @apply flex h-full flex-col justify-center rounded-2xl border border-navy/10
-           bg-cream p-4;
-  }
-
-  /* Counsellor section: green / white / black only */
-  #counsellor .badge-light{
-    @apply border-navy/15 bg-cream text-navy shadow-none;
-  }
-  #counsellor .badge-light .badge-dot{ @apply bg-gold text-gold; }
-  #counsellor .stat-num{ @apply text-navy; }
-  #counsellor .stat-card{ @apply hover:border-navy/25; }
-  #counsellor .check-mark{
-    @apply bg-gold/20 text-navy;
-  }
-  #counsellor .role-shift-card .text-violet,
-  #counsellor .font-display.text-violet{
-    @apply text-navy;
-  }
-
-  /* ---------- Schedule ---------- */
-  .day-card{
-    @apply shadow-warm-sm transition duration-[400ms] ease-lift
-           hover:-translate-y-[3px] hover:border-line-warm hover:shadow-warm-md;
-  }
-  .day-head{
-    @apply relative overflow-hidden bg-navy px-6 py-8 sm:px-8 sm:py-10
-           after:absolute after:inset-x-0 after:bottom-0 after:h-1 after:bg-linear-to-r
-           after:from-gold after:via-gold/70 after:to-transparent after:content-[''];
-  }
-  .day-head-kicker{
-    @apply mb-2 font-sans text-[11px] font-semibold uppercase tracking-[0.16em] text-gold;
-  }
-  .day-head-title{
-    @apply font-display text-[1.75rem] font-bold leading-tight tracking-tight text-white
-           sm:text-[2.15rem];
-  }
-  .day-head-date{
-    @apply mt-4 inline-flex items-center rounded-full border border-gold/40 bg-gold
-           px-4 py-2 font-sans text-xs font-semibold tracking-wide text-navy sm:mt-0;
-  }
-  .slot{
-    /* 76px keeps a full "16:30-17:30" on one line at the mono size below. */
-    @apply -mx-2 grid grid-cols-[76px_1fr] gap-3 rounded-lg border-b border-line
-           px-2 py-3.5 transition-colors duration-300 last:border-b-0
-           hover:bg-violet/[0.04] sm:grid-cols-[88px_1fr];
-  }
-  .slot-time{ @apply pt-0.5 font-sans text-[12px] font-semibold tabular-nums tracking-tight text-navy; }
-  .slot-icon{
-    @apply mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-md bg-gold/15 text-navy;
-  }
-  .slot-title{ @apply mb-0.5 font-display text-sm font-bold leading-snug tracking-tight text-balance text-ink; }
-  .slot-desc{ @apply text-sm leading-snug text-ink-soft; }
-  .slot-speaker{
-    @apply mt-2.5 flex items-center gap-2.5 rounded-xl border border-line bg-[#F8F7FF] px-2.5 py-2;
-  }
-  .slot-speaker-photo{
-    @apply flex size-8 shrink-0 items-center justify-center rounded-full bg-violet/15
-           font-display text-[10px] font-bold text-violet;
-  }
-
-  /* ---------- Speakers & schools ---------- */
-  .speaker-card{
-    @apply shadow-warm-sm transition duration-[400ms] ease-lift
-           hover:-translate-y-[5px] hover:border-line-warm hover:shadow-warm-md;
-  }
-  .speaker-photo{ @apply transition-transform duration-500 ease-lift group-hover:scale-105; }
-  .speaker-tag{ @apply shadow-tag; }
-
-  .school-tag{
-    @apply flex items-center gap-2 rounded-field border border-line px-4 py-3 text-sm text-ink
-           transition duration-300 ease-lift hover:-translate-y-0.5 hover:border-line-warm
-           hover:bg-paper hover:shadow-chip;
-  }
-
-  /* ---------- Pricing ---------- */
-  .plan-wrap{ @apply transition-transform duration-[400ms] ease-lift hover:-translate-y-1.5; }
-  .plan{
-    @apply relative shadow-warm-sm transition duration-[400ms] ease-lift
-           group-hover:border-line-warm group-hover:shadow-warm-md;
-  }
-  .plan-badge{ @apply tracking-[0.14em] shadow-badge; }
-  .plan-feature{ @apply flex items-start gap-2 text-sm; }
-
-  /* ---------- Forms ---------- */
-  .field-label{ @apply mb-2 block text-xs font-semibold tracking-[0.02em] text-ink; }
-  .field{
-    @apply w-full rounded-field border border-line bg-paper px-4 py-3.5 text-base text-ink
-           placeholder:text-ink/40 focus:border-ink/35 focus:outline-none;
-  }
-
-  /* ---------- Nav ---------- */
-  .nav-link{
-    @apply relative py-0.5 text-[13px] font-medium text-ink/55 transition-colors hover:text-ink
-           after:absolute after:inset-x-0 after:-bottom-2 after:h-px after:origin-left
-           after:scale-x-0 after:bg-linear-to-r after:from-violet after:to-blue
-           after:transition-transform after:duration-300 after:ease-in-out after:content-['']
-           hover:after:scale-x-100;
-  }
-  .nav-link.is-active{ @apply text-ink after:scale-x-100; }
-
-  .nav-toggle{ @apply cursor-pointer rounded-[10px] transition-colors duration-200 hover:bg-ink/6; }
-  .nav-toggle span{ @apply transition duration-[250ms] ease-out; }
-
-  .logo-mark{
-    @apply shadow-[0_6px_16px_-6px_rgba(0,174,239,0.45),inset_0_1px_0_rgba(255,255,255,0.3)]
-           transition duration-300 ease-out
-           group-hover:-translate-y-px group-hover:-rotate-2
-           group-hover:shadow-[0_8px_20px_-6px_rgba(0,174,239,0.55),inset_0_1px_0_rgba(255,255,255,0.35)];
-  }
-
-  /* ---------- Partner strip & countdown ---------- */
-  .partner-item{ @apply opacity-[0.92] transition-opacity duration-300 hover:opacity-100; }
-  .partner-name{ @apply transition-colors duration-300 group-hover:text-violet-mist; }
-
-  .countdown-cell{
-    @apply relative flex-1 px-1
-           before:absolute before:top-0.5 before:bottom-4 before:left-0 before:w-px
-           before:bg-linear-to-b before:from-transparent before:via-white/20
-           before:to-transparent before:content-[''] first:before:hidden;
-  }
-
-  .price-was{ @apply text-sm text-ink-soft line-through; }
-  .price-now{ @apply font-display text-2xl font-bold tracking-tight text-ink; }
-  .price-note{ @apply mt-1 text-xs font-medium text-ink-soft; }
-  .tick-green{ @apply font-bold text-[#16A34A]; }
-  .speaker-grid{
-    @apply grid grid-cols-2 gap-4 sm:grid-cols-4;
-  }
-  .speaker-slide{
-    @apply overflow-hidden rounded-2xl border border-line bg-white;
-  }
-
-  .ticker-bar{
-    @apply flex items-stretch border-b border-white/10 bg-navy;
-  }
-  .ticker{
-    @apply flex min-w-0 flex-1 items-center overflow-hidden text-[11px] font-medium
-           tracking-[0.04em] text-white;
-  }
-  .ticker-track{
-    @apply flex w-max items-center gap-10 whitespace-nowrap py-2.5 leading-none;
-    animation: ticker-scroll 56s linear infinite;
-  }
-  .ticker-count{
-    @apply flex shrink-0 items-center gap-2.5 border-l border-white/10 bg-navy-700/80 px-3 py-2 sm:gap-3 sm:px-4;
-  }
-  .ticker-count-label{
-    @apply hidden font-sans text-[9px] font-semibold uppercase tracking-[0.14em] text-gold/90 sm:inline;
-  }
-  .ticker-count-cell{
-    @apply flex min-w-[1.7rem] flex-col items-center leading-none sm:min-w-[2rem];
-  }
-  .ticker-count-cell strong{
-    @apply font-display text-[13px] font-bold tabular-nums text-white sm:text-sm;
-  }
-  .ticker-count-cell span{
-    @apply mt-0.5 text-[8px] font-medium uppercase tracking-[0.12em] text-violet-mist/70;
-  }
-  .ticker-count-sep{
-    @apply self-start pt-0.5 text-[10px] font-bold text-gold/50;
-  }
-  @keyframes ticker-scroll{
-    from{ transform:translateX(0); }
-    to{ transform:translateX(-50%); }
-  }
-
-  .site-nav{ @apply relative; }
-  .nav-main{
-    @apply border-b border-line bg-white/90 backdrop-blur-[20px] backdrop-saturate-150
-           shadow-[0_1px_0_rgba(0,174,239,0.08),0_16px_32px_-28px_rgba(11,61,46,0.25)];
-  }
-  .nav-compact{
-    @apply hidden border-b border-line bg-white/90 backdrop-blur-[20px] backdrop-saturate-150
-           shadow-[0_1px_0_rgba(0,174,239,0.08),0_16px_32px_-28px_rgba(11,61,46,0.25)];
-  }
-  .site-nav.is-compact .nav-main{ @apply hidden; }
-  .site-nav.is-compact .nav-compact{ @apply block; }
-  .sticky:has(.site-nav.is-compact) .ticker-bar .ticker-count{ @apply hidden; }
-  .nav-count{
-    @apply flex items-center gap-1.5 rounded-xl border border-navy/15 bg-navy/[0.06] px-2.5 py-1.5;
-  }
-  .nav-count-cell{
-    @apply flex min-w-[2.4rem] flex-col items-center leading-none;
-  }
-  .nav-count-cell strong{
-    @apply font-display text-sm font-bold tabular-nums text-navy;
-  }
-  .nav-count-cell span{
-    @apply mt-0.5 text-[9px] font-sans font-medium capitalize tracking-wide text-navy/55;
-  }
-  .nav-count-sep{ @apply pb-2.5 text-xs font-bold text-navy/30; }
-  .nav-compact-links{ @apply hidden items-center gap-8 lg:flex; }
-
-  .partner-slot{
-    @apply flex min-h-[72px] flex-col items-center justify-center gap-1 rounded-xl border border-line
-           bg-white px-4 py-3 text-center transition hover:border-violet/20;
-  }
-  .partner-tag{ @apply text-[10px] font-semibold tracking-[0.06em] text-violet; }
-  .partner-name-mark{ @apply font-display text-base font-semibold tracking-tight text-ink; }
-
-  .attend-list{
-    @apply grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3;
-  }
-  .attend-pill{
-    @apply flex w-full items-center gap-2.5 rounded-xl border border-line bg-white
-           px-3.5 py-3 text-left text-[13px] font-medium leading-snug text-ink;
-  }
-  .attend-icon{
-    @apply flex size-8 shrink-0 items-center justify-center rounded-lg bg-gold/15 text-navy;
-  }
-  .attend-icon svg{
-    @apply size-4;
-  }
-
-  .slot-speaker-h{
-    @apply mt-2.5 inline-flex max-w-full items-center gap-2.5 rounded-xl border border-line bg-[#F8F7FF] py-1.5 pr-3 pl-1.5;
-  }
-  .slot-speaker-photo-sm{
-    @apply flex size-9 shrink-0 items-center justify-center rounded-lg bg-violet/15
-           font-display text-[10px] font-bold text-violet;
-  }
-  .schedule-tab{
-    @apply rounded-full border border-line bg-white px-6 py-2.5 text-sm font-semibold text-ink-soft
-           transition duration-200 sm:px-7 sm:text-[15px];
-  }
-  .schedule-tab.is-active{
-    @apply border-navy bg-navy text-white shadow-[0_10px_24px_-12px_rgba(11,61,46,0.55)];
-  }
-
-  .school-list{
-    @apply mx-auto grid max-w-5xl grid-cols-2 gap-2.5 lg:grid-cols-5;
-  }
-  .school-list li{
-    @apply flex min-h-[4.6rem] flex-col items-center justify-center rounded-xl
-           border border-white/10 bg-white/[0.04] px-3 py-3 text-center;
-  }
-  .school-list .school-name{
-    @apply font-display text-[13px] font-semibold tracking-tight text-white;
-  }
-  .school-list .school-place{
-    @apply mt-1 font-display text-[13px] font-semibold tracking-tight text-white/70;
-  }
-  .partner-list{
-    @apply mx-auto flex max-w-4xl flex-col divide-y divide-white/10
-           border-y border-white/15 sm:flex-row sm:divide-x sm:divide-y-0;
-  }
-  .partner-list li{
-    @apply flex flex-1 flex-col items-center justify-center px-5 py-7 text-center;
-  }
-  .partner-list .partner-stat{
-    @apply font-display text-[2.5rem] font-bold leading-none tracking-tight text-gold
-           sm:text-[2.75rem];
-  }
-  .partner-list .partner-label{
-    @apply mt-3 max-w-[14ch] text-[13px] font-medium leading-snug text-white/70;
-  }
-
-  .group-card{
-    @apply mx-auto mt-4 max-w-xl overflow-hidden rounded-2xl border border-violet/20
-           bg-linear-to-r from-[#F8F7FF] to-white p-3.5;
-  }
-
-  .plan-chip{
-    @apply mb-1.5 inline-flex w-fit self-start rounded-full border border-violet/20 bg-violet/8
-           px-2 py-0.5 text-[9px] font-semibold tracking-wide text-violet;
-  }
-
-  .footer-link{
-    @apply font-sans text-sm text-white/70 transition-colors hover:text-white;
-  }
-  .site-footer-photo{
-    @apply absolute inset-0 bg-cover bg-center;
-    background-image:url('./images/hero-conference.jpg');
-    filter:blur(8px);
-    transform:scale(1.08);
-  }
-  .site-footer-veil{
-    @apply absolute inset-0 bg-black/78;
-  }
-}
-</style>
 </head>
 
 <body class="overflow-x-hidden bg-cream font-sans text-md text-ink antialiased selection:bg-violet selection:text-white">
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- ============ NAV ============ -->
 <div class="sticky top-0 z-50">
 <div class="ticker-bar">
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>Education. Innovation. Leadership. E.I.L. Conference 2026.</span>
-      <span>Education. Innovation. Leadership. E.I.L. Conference 2026.</span>
-      <span>Education. Innovation. Leadership. E.I.L. Conference 2026.</span>
-      <span>Education. Innovation. Leadership. E.I.L. Conference 2026.</span>
-      <span>Education. Innovation. Leadership. E.I.L. Conference 2026.</span>
-      <span>Education. Innovation. Leadership. E.I.L. Conference 2026.</span>
-      <span>Education. Innovation. Leadership. E.I.L. Conference 2026.</span>
-      <span>Education. Innovation. Leadership. E.I.L. Conference 2026.</span>
+      <span>Education. Innovation. Leadership. E.I.L. Conference 2026, Organised by Guby Rogers.</span>
+      <span>Education. Innovation. Leadership. E.I.L. Conference 2026, Organised by Guby Rogers.</span>
+      <span>Education. Innovation. Leadership. E.I.L. Conference 2026, Organised by Guby Rogers.</span>
+      <span>Education. Innovation. Leadership. E.I.L. Conference 2026, Organised by Guby Rogers.</span>
+      <span>Education. Innovation. Leadership. E.I.L. Conference 2026, Organised by Guby Rogers.</span>
+      <span>Education. Innovation. Leadership. E.I.L. Conference 2026, Organised by Guby Rogers.</span>
+      <span>Education. Innovation. Leadership. E.I.L. Conference 2026, Organised by Guby Rogers.</span>
+      <span>Education. Innovation. Leadership. E.I.L. Conference 2026, Organised by Guby Rogers.</span>
     </div>
   </div>
 </div>
@@ -789,12 +94,10 @@
 <nav class="site-nav" data-site-nav>
   <div class="nav-main">
     <div class="shell flex items-center justify-between py-3.5">
-      <a href="#home" class="group flex items-center gap-2.5 font-display text-xl font-semibold tracking-tight text-ink">
-        <span class="logo-mark flex size-[34px] items-center justify-center rounded-[9px] bg-linear-[145deg] from-gold to-violet font-mono text-sm font-semibold text-white">EI</span>
-        EIL Conference
+      <a href="#home" class="site-logo" aria-label="e.i.L Conference home">
+        <img src="./images/eil-logo.png" alt="e.i.L Conference" width="1024" height="221" fetchpriority="high">
       </a>
       <div class="hidden items-center gap-8 lg:flex">
-        <a href="#why" data-nav="why" class="nav-link">Why EIL</a>
         <a href="#schedule" data-nav="schedule" class="nav-link">Schedule</a>
         <a href="#speakers" data-nav="speakers" class="nav-link">Speakers</a>
         <a href="#pricing" data-nav="pricing" class="nav-link">Passes</a>
@@ -813,34 +116,42 @@
         </div>
         <a href="#pricing" class="btn btn-sm btn-violet">Reserve Your Seat</a>
       </div>
-      <button type="button" data-nav-toggle aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"
-              class="nav-toggle flex flex-col gap-[5px] p-1.5 lg:hidden">
-        <span class="h-0.5 w-[22px] bg-ink"></span>
-        <span class="h-0.5 w-[22px] bg-ink"></span>
-        <span class="h-0.5 w-[22px] bg-ink"></span>
-      </button>
+      <div class="flex items-center gap-2 lg:hidden">
+        <a href="#pricing" class="btn btn-sm btn-violet nav-bar-cta">Reserve Your Seat</a>
+        <button type="button" data-nav-toggle aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"
+                class="nav-toggle flex flex-col gap-[5px] p-1.5">
+          <span class="h-0.5 w-[22px] bg-ink"></span>
+          <span class="h-0.5 w-[22px] bg-ink"></span>
+          <span class="h-0.5 w-[22px] bg-ink"></span>
+        </button>
+      </div>
     </div>
     <div id="mobile-menu" data-mobile-menu
          class="hidden flex-col border-t border-line bg-white px-5 pt-2.5 pb-5 shadow-menu lg:hidden">
-      <a href="#home" class="border-b border-line py-3 text-md font-medium text-ink/80">Home</a>
-      <a href="#why" class="border-b border-line py-3 text-md font-medium text-ink/80">Why EIL</a>
-      <a href="#schedule" class="border-b border-line py-3 text-md font-medium text-ink/80">Schedule</a>
-      <a href="#speakers" class="border-b border-line py-3 text-md font-medium text-ink/80">Speakers</a>
-      <a href="#pricing" class="border-b border-line py-3 text-md font-medium text-ink/80">Passes</a>
-      <a href="#partner" class="border-b border-line py-3 text-md font-medium text-ink/80">Partners</a>
-      <a href="#faq" class="border-b border-line py-3 text-md font-medium text-ink/80">FAQ &amp; Contact</a>
-      <a href="#pricing" class="btn btn-violet btn-block mt-4">Reserve Your Seat</a>
+      <a href="#home" class="border-b border-line py-3 text-center text-md font-medium text-ink/80">Home</a>
+      <a href="#schedule" class="border-b border-line py-3 text-center text-md font-medium text-ink/80">Schedule</a>
+      <a href="#speakers" class="border-b border-line py-3 text-center text-md font-medium text-ink/80">Speakers</a>
+      <a href="#pricing" class="border-b border-line py-3 text-center text-md font-medium text-ink/80">Passes</a>
+      <a href="#partner" class="border-b border-line py-3 text-center text-md font-medium text-ink/80">Partners</a>
+      <a href="#faq" class="border-b border-line py-3 text-center text-md font-medium text-ink/80">FAQ &amp; Contact</a>
+      <div class="nav-count mt-4 w-full justify-center lg:hidden" aria-label="Countdown to 18 September 2026">
+        <div class="nav-count-cell"><strong data-nav-days>--</strong><span>Days</span></div>
+        <span class="text-[10px] text-navy/35">:</span>
+        <div class="nav-count-cell"><strong data-nav-hours>--</strong><span>Hrs</span></div>
+        <span class="text-[10px] text-navy/35">:</span>
+        <div class="nav-count-cell"><strong data-nav-mins>--</strong><span>Min</span></div>
+        <span class="text-[10px] text-navy/35">:</span>
+        <div class="nav-count-cell"><strong data-nav-secs>--</strong><span>Sec</span></div>
+      </div>
     </div>
   </div>
 
   <div class="nav-compact">
     <div class="shell flex items-center justify-between py-3.5">
-      <a href="#home" class="group flex items-center gap-2.5 font-display text-xl font-semibold tracking-tight text-ink">
-        <span class="logo-mark flex size-[34px] items-center justify-center rounded-[9px] bg-linear-[145deg] from-gold to-violet font-mono text-sm font-semibold text-white">EI</span>
-        EIL Conference
+      <a href="#home" class="site-logo" aria-label="e.i.L Conference home">
+        <img src="./images/eil-logo.png" alt="e.i.L Conference" width="1024" height="221">
       </a>
       <div class="nav-compact-links hidden items-center gap-8 lg:flex">
-        <a href="#why" data-nav="why" class="nav-link">Why EIL</a>
         <a href="#schedule" data-nav="schedule" class="nav-link">Schedule</a>
         <a href="#speakers" data-nav="speakers" class="nav-link">Speakers</a>
         <a href="#pricing" data-nav="pricing" class="nav-link">Passes</a>
@@ -865,97 +176,57 @@
 </div>
 
 <div id="home">
+<main id="main">
 <!-- ============ HERO ============ -->
 <header class="hero text-white">
   <div class="hero-photo" aria-hidden="true"></div>
   <div class="hero-veil" aria-hidden="true"></div>
 
-  <div class="shell relative z-10">
-    <div class="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-10">
-      <div class="flex flex-col justify-center lg:min-h-full">
-        <div>
-        <a href="#pricing" class="badge badge-dark mb-4">
+  <div class="shell relative z-10 flex flex-1 items-center">
+    <div class="mx-auto max-w-6xl text-center">
+      <div class="mb-6 flex justify-center">
+        <span class="badge badge-dark">
           <span class="badge-dot" aria-hidden="true"></span>
-          <span class="badge-title">EIL Conference 2026</span>
-          <span class="badge-dash" aria-hidden="true">-</span>
-          <span class="badge-cta">Education · Innovation · Leadership</span>
-        </a>
-        <h1 class="hero-title">
-          <span class="block text-white">India’s Leading School Leaders.</span>
-          <span class="mt-1 block text-gradient-brand">Career Counsellors.</span>
-          <span class="mt-1 block text-white">One Room.</span>
-        </h1>
-        <p class="section-lead-light mt-3 max-w-[40ch]">A two-day national conference for the people shaping student choices, careers and institutional outcomes.</p>
-        </div>
-        <div class="mt-6 flex flex-wrap items-center gap-3">
-          <a href="#pricing" class="btn btn-violet btn-shine">Reserve Your Seat →</a>
-          <a href="#why" class="btn btn-ghost-dark">Explore the Programme</a>
-        </div>
+          <span class="badge-title">18–19 September 2026 · Gurugram</span>
+        </span>
       </div>
-
-      <div class="hero-card relative flex h-full overflow-hidden rounded-2xl border border-white/12 bg-black/25 p-6 backdrop-blur-md lg:p-8">
-        <div id="card-shader" class="pointer-events-none absolute inset-0 z-0 opacity-[0.1]"></div>
-        <div class="relative z-10 flex h-full w-full flex-col justify-between gap-6">
-          <div>
-            <div class="mb-3 flex items-center gap-2 text-[11px] font-medium tracking-[0.14em] text-white uppercase">
-              <span class="inline-block size-1.5 rounded-full bg-gold"></span>
-              Mark your calendar
-            </div>
-            <div class="font-display text-[1.35rem] font-semibold leading-snug tracking-tight text-white lg:text-[1.55rem]">
-              18–19 September 2026
-            </div>
-            <div class="mt-1 text-sm text-white/65">Gurugram</div>
-          </div>
-
-          <div class="grid grid-cols-1 gap-5 border-y border-white/10 py-5 sm:grid-cols-2 sm:gap-8">
-            <div>
-              <div class="mb-1.5 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-white/45">Venue</div>
-              <div class="text-[15px] leading-snug text-white/95">Radisson Hotel,<br>Udyog Vihar</div>
-            </div>
-            <div>
-              <div class="mb-1.5 font-mono text-[11px] font-medium uppercase tracking-[0.12em] text-white/45">Format</div>
-              <div class="text-[15px] leading-snug text-white/95">In-person<br>two-day summit</div>
-            </div>
-          </div>
-
-          <div class="grid flex-1 grid-cols-2 gap-3" aria-label="Event scale">
-            <div class="hero-metric">
-              <div class="hero-metric-num">200+</div>
-              <div class="mt-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-white/55">Delegates</div>
-            </div>
-            <div class="hero-metric">
-              <div class="hero-metric-num">15+</div>
-              <div class="mt-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-white/55">Experts</div>
-            </div>
-            <div class="hero-metric">
-              <div class="hero-metric-num">10+</div>
-              <div class="mt-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-white/55">Action-led sessions</div>
-            </div>
-            <div class="hero-metric">
-              <div class="hero-metric-num">2</div>
-              <div class="mt-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-white/55">Days</div>
-            </div>
-          </div>
-        </div>
+      <h1 class="hero-title">
+        <span class="block max-md:whitespace-normal md:whitespace-nowrap">School Leaders. Career Counsellors. One Room.</span>
+      </h1>
+      <p class="section-lead-light mx-auto mt-5 max-w-[46ch]">A two-day national conference for the people shaping student choices, careers and institutional outcomes.</p>
+      <div class="mx-auto mt-8 flex w-full max-w-sm flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:items-center sm:justify-center">
+        <a href="#pricing" class="btn btn-violet btn-shine w-full sm:w-auto">Reserve Your Seat →</a>
+        <a href="#schedule" class="btn btn-ghost-dark w-full sm:w-auto">Conference Schedule</a>
       </div>
+      <p class="mt-6 text-sm text-white/55">Radisson Hotel, Udyog Vihar, Gurugram · In-person</p>
     </div>
   </div>
+  <ul class="hero-stats" aria-label="Conference at a glance">
+    <li>
+      <span class="hero-stat-num">200+</span>
+      <span class="hero-stat-label">School Leaders<br>&amp; Counsellors</span>
+    </li>
+    <li>
+      <span class="hero-stat-num">16+</span>
+      <span class="hero-stat-label">Hours of<br>Engagement</span>
+    </li>
+    <li>
+      <span class="hero-stat-num">15+</span>
+      <span class="hero-stat-label">Expert<br>Speakers</span>
+    </li>
+    <li>
+      <span class="hero-stat-num">10+</span>
+      <span class="hero-stat-label">Tracks &amp;<br>Sessions</span>
+    </li>
+    <li>
+      <span class="hero-stat-num">2</span>
+      <span class="hero-stat-label">Days of<br>Learning</span>
+    </li>
+  </ul>
 </header>
 
-<!-- ============ PARTNERS ============ -->
-<section class="border-b border-line bg-white py-8">
-  <div class="shell">
-    <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
-      <div class="partner-slot"><div class="partner-tag">An Initiative By</div><div class="partner-name-mark">Guby Rogers</div></div>
-      <div class="partner-slot"><div class="partner-tag">Event Executed By</div><div class="partner-name-mark">The Wolf Media Co.</div></div>
-      <div class="partner-slot"><div class="partner-tag">Knowledge Partner</div><div class="partner-name-mark">Shri Educare</div></div>
-      <div class="partner-slot"><div class="partner-tag">School ERP Partner</div><div class="partner-name-mark">ShriConnect</div></div>
-    </div>
-  </div>
-</section>
-
 <!-- Confirmed school representation — hidden for now; restore by uncommenting.
-<section id="schools" class="section bg-navy !py-10 lg:!py-12">
+<section id="schools" class="section bg-navy">
   <div class="shell">
     <div data-reveal class="mx-auto mb-8 max-w-xl translate-y-3 text-center opacity-0 transition duration-700 ease-out">
       <div class="mb-3 flex justify-center">
@@ -979,114 +250,142 @@
   </div>
 </section>
 -->
-<script type="module">
-  try {
-    const { ShaderMount, meshGradientFragmentShader, dotGridFragmentShader, getShaderColorFromString } =
-      await import('https://esm.sh/@paper-design/shaders');
-
-    const heroContainer = document.getElementById('hero-shader');
-    if (heroContainer) {
-      new ShaderMount(
-        heroContainer,
-        meshGradientFragmentShader,
-        {
-          u_colors: [
-            getShaderColorFromString('#1A1A1A'),
-            getShaderColorFromString('#4A4A4A'),
-            getShaderColorFromString('#FFFFFF'),
-          ],
-          u_colorsCount: 3,
-          u_distortion: 0.35,
-          u_swirl: 0.3,
-          u_grainMixer: 0,
-          u_grainOverlay: 0,
-          u_fit: 1,
-          u_scale: 1,
-          u_rotation: 0,
-          u_offsetX: 0,
-          u_offsetY: 0,
-        },
-        undefined,
-        0.25
-      );
-    }
-
-    const cardContainer = document.getElementById('card-shader');
-    if (cardContainer) {
-      new ShaderMount(
-        cardContainer,
-        dotGridFragmentShader,
-        {
-          colorBack: getShaderColorFromString('#FFFFFF00'),
-          colorDot: getShaderColorFromString('#00AEEF'),
-          shape: 'circle',
-          size: 0.4,
-          spacing: 2.2,
-        },
-        undefined,
-        0
-      );
-    }
-  } catch (err) {
-    console.warn('[hero-shader] skipped, falling back to static background', err);
-  }
-</script>
-
 <!-- ============ WHO SHOULD ATTEND ============ -->
-<section class="section bg-cream !py-10 lg:!py-12">
+<section class="section bg-navy">
   <div class="shell">
     <div data-reveal class="section-head-center mb-7 translate-y-3 opacity-0 transition duration-700 ease-out">
       <div class="mb-3 flex justify-center">
-        <span class="badge badge-light"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">Who will be in the room</span></span>
+        <span class="badge badge-dark"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">Who will be in the room</span></span>
       </div>
-      <h2 class="section-title">The People Behind Student Decisions.</h2>
+      <h2 class="section-title-light">The People Behind Student Decisions.</h2>
     </div>
     <div data-reveal class="attend-list translate-y-3 opacity-0 transition duration-700 ease-out">
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>Career Counsellors</span>
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>School Counsellors</span>
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6l-8-4z"/></svg></span>Principals</span>
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Vice Principals</span>
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></span>School Directors &amp; Owners</span>
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>University Representatives</span>
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>Admissions &amp; Outreach Professionals</span>
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></span>Student Success Specialists</span>
-      <span class="attend-pill"><span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></span>Education Consultants</span>
+      <div class="attend-pill">
+        <span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+        <span class="attend-role">Career Counsellors</span>
+        <span class="attend-line">Guide pathways and university fit. Help students choose with confidence.</span>
+      </div>
+      <div class="attend-pill">
+        <span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <span class="attend-role">School Counsellors</span>
+        <span class="attend-line">Support students and family choices. Keep care aligned with careers.</span>
+      </div>
+      <div class="attend-pill">
+        <span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6l-8-4z"/></svg></span>
+        <span class="attend-role">Principals</span>
+        <span class="attend-line">Set counselling outcomes for the whole school. Hold teams to a clear, shared standard of practice.</span>
+      </div>
+      <div class="attend-pill">
+        <span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <span class="attend-role">Vice Principals</span>
+        <span class="attend-line">Turn strategy into daily practice. Align staff around student pathways.</span>
+      </div>
+      <div class="attend-pill">
+        <span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></span>
+        <span class="attend-role">Directors &amp; Owners</span>
+        <span class="attend-line">Shape vision and school investment. Decide where counselling grows.</span>
+      </div>
+      <div class="attend-pill">
+        <span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+        <span class="attend-role">University Teams</span>
+        <span class="attend-line">Meet schools that send students. Build trust with those who advise them.</span>
+      </div>
+      <div class="attend-pill">
+        <span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></span>
+        <span class="attend-role">Student Success</span>
+        <span class="attend-line">Track outcomes past the offer. See what happens after enrolment.</span>
+      </div>
+      <div class="attend-pill">
+        <span class="attend-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></span>
+        <span class="attend-role">Education Consultants</span>
+        <span class="attend-line">Advise on programmes and partners. Match schools with the right next step.</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ THE MODERN CAREER COUNSELLOR ============ -->
-<section id="counsellor" class="section scroll-mt-[72px] !py-10 bg-white lg:!py-12">
+<!-- ============ SPEAKERS ============ -->
+<div id="speakers" class="scroll-mt-[72px]">
+<section class="section bg-white">
+  <div class="shell">
+    <div data-reveal class="section-head-center !max-w-none translate-y-3 opacity-0 transition duration-700 ease-out">
+      <div class="mb-4 flex justify-center">
+        <span class="badge badge-light"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">Meet The Speakers</span></span>
+      </div>
+      <h2 class="section-title max-md:whitespace-normal md:whitespace-nowrap">The Voices shaping the Education Landscape</h2>
+    </div>
+  </div>
+
+  <div class="shell">
+    <div class="speaker-grid">
+      <article class="group speaker-slide">
+        <img class="speaker-photo aspect-[4/3] h-auto w-full object-cover" loading="lazy" decoding="async" width="640" height="480" src="./images/speakers/uttara-singh.jpg" alt="Ms. Uttara Singh">
+        <div class="px-4 py-4 text-center">
+          <h3 class="font-display text-base font-bold text-ink">Ms. Uttara Singh</h3>
+          <p class="mt-1 text-xs font-medium text-ink-soft">Director,<br>The Shri Ram Millennium Schools</p>
+        </div>
+      </article>
+      <article class="group speaker-slide">
+        <img class="speaker-photo aspect-[4/3] h-auto w-full object-cover" loading="lazy" decoding="async" width="640" height="480" src="./images/speakers/sandeep-kamra.jpg" alt="Mr. Sandeep Kamra">
+        <div class="px-4 py-4 text-center">
+          <h3 class="font-display text-base font-bold text-ink">Mr. Sandeep Kamra</h3>
+          <p class="mt-1 text-xs font-medium text-ink-soft">Vice-President, Operations,<br>Shri Educare Ltd.</p>
+        </div>
+      </article>
+      <article class="group speaker-slide">
+        <img class="speaker-photo aspect-[4/3] h-auto w-full object-cover" loading="lazy" decoding="async" width="640" height="480" src="./images/speakers/aamir-masood.jpg" alt="Mr. Aamir Masood">
+        <div class="px-4 py-4 text-center">
+          <h3 class="font-display text-base font-bold text-ink">Mr. Aamir Masood</h3>
+          <p class="mt-1 text-xs font-medium text-ink-soft">Associate Director,<br>Indian School of Business</p>
+        </div>
+      </article>
+      <article class="group speaker-slide">
+        <img class="speaker-photo aspect-[4/3] h-auto w-full object-cover" loading="lazy" decoding="async" width="640" height="480" src="./images/speakers/seema-sinha.jpg" alt="Ms. Seema Sinha">
+        <div class="px-4 py-4 text-center">
+          <h3 class="font-display text-base font-bold text-ink">Ms. Seema Sinha</h3>
+          <p class="mt-1 text-xs font-medium text-ink-soft">Vice-Principal,<br>GD Goenka School - Vasant Kunj</p>
+        </div>
+      </article>
+      <article class="group speaker-slide">
+        <img class="speaker-photo aspect-[4/3] h-auto w-full object-cover" loading="lazy" decoding="async" width="640" height="480" src="./images/speakers/anekant-jain.jpg" alt="Mr. Anekant Jain">
+        <div class="px-4 py-4 text-center">
+          <h3 class="font-display text-base font-bold text-ink">Mr. Anekant Jain</h3>
+          <p class="mt-1 text-xs font-medium text-ink-soft">Vice-Principal,<br>Suncity School</p>
+        </div>
+      </article>
+      <article class="group speaker-slide">
+        <img class="speaker-photo aspect-[4/3] h-auto w-full object-cover" loading="lazy" decoding="async" width="640" height="480" src="./images/speakers/sharad-gupta.png" alt="Mr. Sharad Gupta">
+        <div class="px-4 py-4 text-center">
+          <h3 class="font-display text-base font-bold text-ink">Mr. Sharad Gupta</h3>
+          <p class="mt-1 text-xs font-medium text-ink-soft">Senior Consultant,<br>IIT Indore</p>
+        </div>
+      </article>
+      <article class="group speaker-slide">
+        <img class="speaker-photo aspect-[4/3] h-auto w-full object-cover" loading="lazy" decoding="async" width="640" height="480" src="./images/speakers/sundanda-rao.jpg" alt="Ms. Sundanda Rao">
+        <div class="px-4 py-4 text-center">
+          <h3 class="font-display text-base font-bold text-ink">Ms. Sundanda Rao</h3>
+          <p class="mt-1 text-xs font-medium text-ink-soft">Regional Mentor of Change,<br>NITI Aayog, AIM</p>
+        </div>
+      </article>
+    </div>
+    <p class="mt-6 text-center text-sm font-medium text-ink-soft">Announcing the complete list soon....</p>
+  </div>
+</section>
+</div>
+
+<section id="counsellor" class="section scroll-mt-[72px] bg-white pb-20 lg:pb-24">
   <div class="shell">
     <div data-reveal class="section-head-center mb-5 translate-y-3 opacity-0 transition duration-700 ease-out">
       <div class="mb-3 flex justify-center">
         <span class="badge badge-light">
           <span class="badge-dot" aria-hidden="true"></span>
-          <span class="badge-title">The Modern Career Counsellor</span>
+          <span class="badge-title">The Modern Career Counselling</span>
         </span>
       </div>
       <h2 class="section-title whitespace-nowrap max-md:whitespace-normal">Student choices are expanding. Clarity Isn't.</h2>
     </div>
 
-    <div data-reveal class="grid translate-y-3 gap-3 opacity-0 transition duration-700 ease-out lg:grid-cols-3">
-      <div class="role-shift-card lg:row-span-2">
-        <p class="mb-2 text-[11px] font-semibold tracking-wide text-navy">The role has changed</p>
-        <p class="mb-2 text-[13px] font-semibold text-ink">Today's counsellor is expected to:</p>
-        <ul class="mb-3 grid grid-cols-1 gap-1.5 sm:grid-cols-2 lg:grid-cols-1">
-          <li class="check-li"><span class="check-mark">✓</span>Interpret policy</li>
-          <li class="check-li"><span class="check-mark">✓</span>Counsel parents</li>
-          <li class="check-li"><span class="check-mark">✓</span>Understand admissions</li>
-          <li class="check-li"><span class="check-mark">✓</span>Support wellbeing</li>
-          <li class="check-li"><span class="check-mark">✓</span>Evaluate AI-driven careers</li>
-          <li class="check-li"><span class="check-mark">✓</span>Build long-term student success</li>
-          <li class="check-li"><span class="check-mark">✓</span>Guide subject and stream choices</li>
-          <li class="check-li"><span class="check-mark">✓</span>Navigate scholarships and funding</li>
-          <li class="check-li"><span class="check-mark">✓</span>Coordinate with school leadership</li>
-          <li class="check-li"><span class="check-mark">✓</span>Track outcomes beyond placement</li>
-        </ul>
-        <p class="mt-auto font-display text-[13px] font-bold text-navy">You are the Architects of the Future</p>
-      </div>
-
+    <div data-reveal class="grid translate-y-3 gap-3 opacity-0 transition duration-700 ease-out sm:grid-cols-2 lg:grid-cols-4">
       <div class="stat-card">
         <div class="stat-num">54.2%</div>
         <div class="stat-label">Parents now influence higher-education decisions</div>
@@ -1110,16 +409,6 @@
         <div class="stat-label">Students would choose a different course today</div>
         <div class="stat-sub">Better guidance leads to better futures.</div>
         <div class="stat-source">Education Times, 17 June</div>
-      </div>
-    </div>
-
-    <div data-reveal class="relative mt-5 overflow-hidden rounded-2xl bg-navy px-5 py-5 translate-y-3 opacity-0 transition duration-700 ease-out lg:px-8 lg:py-6">
-      <div class="relative z-10 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-        <div class="max-w-xl">
-          <p class="mb-1.5 font-sans text-[11px] font-medium tracking-wide text-gold">18–19 September 2026</p>
-          <h3 class="font-display text-lg font-bold leading-snug text-balance text-white lg:text-xl">Learn. Connect. Apply. Lead.<br>Be in the room where student futures are shaped.</h3>
-        </div>
-        <a href="#pricing" class="btn btn-violet btn-shine shrink-0">Reserve Your Seat →</a>
       </div>
     </div>
   </div>
@@ -1154,7 +443,7 @@
           <li class="check-li"><span class="check-mark">✓</span>Stakeholder alignment</li>
           <li class="check-li"><span class="check-mark">✓</span>Peer perspectives</li>
         </ul>
-        <p class="format-outcome"><strong>Outcome:</strong> clearer institutional decisions</p>
+        <p class="format-outcome"><strong>Outcome:</strong>Clearer decisions for schools</p>
       </div>
       <div class="format-card">
         <h4 class="format-heading">
@@ -1169,7 +458,7 @@
           <li class="check-li"><span class="check-mark">✓</span>Counselling frameworks</li>
           <li class="check-li"><span class="check-mark">✓</span>Outcome measurement</li>
         </ul>
-        <p class="format-outcome"><strong>Outcome:</strong> frameworks you can implement</p>
+        <p class="format-outcome"><strong>Outcome:</strong>Frameworks you can implement</p>
       </div>
       <div class="format-card">
         <h4 class="format-heading">
@@ -1184,7 +473,7 @@
           <li class="check-li"><span class="check-mark">✓</span>Course &amp; university fit</li>
           <li class="check-li"><span class="check-mark">✓</span>Study-abroad challenges</li>
         </ul>
-        <p class="format-outcome"><strong>Outcome:</strong> better judgement on real cases</p>
+        <p class="format-outcome"><strong>Outcome:</strong>Better judgement on cases</p>
       </div>
       <div class="format-card">
         <h4 class="format-heading">
@@ -1199,7 +488,7 @@
           <li class="check-li"><span class="check-mark">✓</span>Scalable practices</li>
           <li class="check-li"><span class="check-mark">✓</span>Implementation plans</li>
         </ul>
-        <p class="format-outcome"><strong>Outcome:</strong> practical next-step plans</p>
+        <p class="format-outcome"><strong>Outcome:</strong>Practical next-step action plans</p>
       </div>
     </div>
 
@@ -1212,7 +501,7 @@
           <span class="badge-cta">Value Beyond the Conference</span>
         </span>
         <h2 class="section-title-light">Learn. Connect.<br>Apply. Lead.</h2>
-        <p class="section-lead-light">Value that continues beyond the conference — tools, frameworks and a peer network you can put to work immediately.</p>
+        <p class="section-lead-light">Value that continues beyond the conference.<br>Tools, frameworks and a peer network you can put to work immediately.</p>
       </div>
       <div class="grid grid-cols-1 gap-x-10 gap-y-3 sm:grid-cols-2">
         <ul class="flex flex-col gap-3">
@@ -1220,7 +509,7 @@
           <li class="flex items-start gap-2.5 text-left text-sm text-white"><span class="tick-green">✓</span>A 90-day action plan</li>
           <li class="flex items-start gap-2.5 text-left text-sm text-white"><span class="tick-green">✓</span>Student-centred solutions</li>
           <li class="flex items-start gap-2.5 text-left text-sm text-white"><span class="tick-green">✓</span>Case-tested approaches</li>
-          <li class="flex items-start gap-2.5 text-left text-sm text-white"><span class="tick-green">✓</span>EIL Professional Certificate</li>
+          <li class="flex items-start gap-2.5 text-left text-sm text-white"><span class="tick-green">✓</span>E.I.L. Professional Certificate</li>
         </ul>
         <ul class="flex flex-col gap-3">
           <li class="flex items-start gap-2.5 text-left text-sm text-white"><span class="tick-green">✓</span>Stronger institutional connects</li>
@@ -1246,7 +535,7 @@
       <h2 class="section-title text-[1.85rem] sm:text-[2.15rem]">Two Days.<br class="sm:hidden"> A Priceless Experience.</h2>
     </div>
 
-    <div data-reveal class="mx-auto mb-7 flex translate-y-3 justify-center gap-2.5 opacity-0 transition duration-700 ease-out" role="tablist" aria-label="Conference days">
+    <div data-reveal class="mx-auto mb-7 flex w-full max-w-3xl translate-y-3 justify-center gap-2 opacity-0 transition duration-700 ease-out" role="tablist" aria-label="Conference days">
       <button type="button" class="schedule-tab is-active" role="tab" id="tab-day-1" aria-selected="true" aria-controls="panel-day-1" data-schedule-tab="1">Day 1 · Friday 18 September</button>
       <button type="button" class="schedule-tab" role="tab" id="tab-day-2" aria-selected="false" aria-controls="panel-day-2" data-schedule-tab="2">Day 2 · Saturday 19 September</button>
     </div>
@@ -1330,7 +619,7 @@
             <div class="slot-time">13:45 - 14:30</div>
             <div class="flex items-center gap-2.5">
               <span class="slot-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></span>
-              <div class="text-sm font-semibold text-ink-soft">Lunch</div>
+              <div class="text-sm font-semibold text-ink-soft">Networking Lunch</div>
             </div>
           </div>
 
@@ -1446,7 +735,7 @@
             <div class="slot-time">13:45 - 14:30</div>
             <div class="flex items-center gap-2.5">
               <span class="slot-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></span>
-              <div class="text-sm font-semibold text-ink-soft">Lunch</div>
+              <div class="text-sm font-semibold text-ink-soft">Networking Lunch</div>
             </div>
           </div>
 
@@ -1490,88 +779,9 @@
 </section>
 </div>
 
-<!-- ============ SPEAKERS ============ -->
-<div id="speakers" class="scroll-mt-[72px]">
-<section class="section bg-white">
-  <div class="shell">
-    <div data-reveal class="mx-auto mb-2 max-w-2xl translate-y-3 text-center opacity-0 transition duration-700 ease-out">
-      <div class="mb-4 flex justify-center">
-        <span class="badge badge-light"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">Meet The Speakers</span></span>
-      </div>
-      <h2 class="section-title">Confirmed Speakers.</h2>
-    </div>
-  </div>
-
-  <div class="shell mt-8">
-    <div class="speaker-grid">
-      <article class="speaker-slide">
-        <div class="speaker-photo flex aspect-[4/3] items-center justify-center font-display text-xl font-bold" style="background:linear-gradient(155deg,#A2D729,#00AEEF);color:#0B3D2E">US</div>
-        <div class="px-4 py-4 text-center">
-          <h3 class="font-display text-base font-bold text-ink">Ms. Uttara Singh</h3>
-          <p class="mt-1 text-xs font-medium text-ink-soft">Director, The Shriram Millennium Schools</p>
-        </div>
-      </article>
-      <article class="speaker-slide">
-        <div class="speaker-photo flex aspect-[4/3] items-center justify-center font-display text-xl font-bold" style="background:linear-gradient(155deg,#0B3D2E,#145C46);color:#fff">SK</div>
-        <div class="px-4 py-4 text-center">
-          <h3 class="font-display text-base font-bold text-ink">Mr. Sandeep Kamra</h3>
-          <p class="mt-1 text-xs font-medium text-ink-soft">VP Operations, Shri Educare Ltd. / TSUS Group</p>
-        </div>
-      </article>
-      <article class="speaker-slide">
-        <div class="speaker-photo flex aspect-[4/3] items-center justify-center font-display text-xl font-bold" style="background:linear-gradient(155deg,#A2D729,#00AEEF);color:#0B3D2E">SR</div>
-        <div class="px-4 py-4 text-center">
-          <h3 class="font-display text-base font-bold text-ink">Ms. Sundanda Rao</h3>
-          <p class="mt-1 text-xs font-medium text-ink-soft">Regional Mentor of Change, NITI Aayog, AIM</p>
-        </div>
-      </article>
-      <article class="speaker-slide">
-        <div class="speaker-photo flex aspect-[4/3] items-center justify-center font-display text-xl font-bold" style="background:linear-gradient(155deg,#0B3D2E,#145C46);color:#fff">AM</div>
-        <div class="px-4 py-4 text-center">
-          <h3 class="font-display text-base font-bold text-ink">Mr. Aamir Masood</h3>
-          <p class="mt-1 text-xs font-medium text-ink-soft">Associate Director, Indian School of Business</p>
-        </div>
-      </article>
-      <article class="speaker-slide">
-        <div class="speaker-photo flex aspect-[4/3] items-center justify-center font-display text-xl font-bold" style="background:linear-gradient(155deg,#A2D729,#00AEEF);color:#0B3D2E">SG</div>
-        <div class="px-4 py-4 text-center">
-          <h3 class="font-display text-base font-bold text-ink">Mr. Sharad Gupta</h3>
-          <p class="mt-1 text-xs font-medium text-ink-soft">Senior Consultant, IIT Indore</p>
-        </div>
-      </article>
-      <article class="speaker-slide">
-        <div class="speaker-photo flex aspect-[4/3] items-center justify-center font-display text-xl font-bold" style="background:linear-gradient(155deg,#0B3D2E,#145C46);color:#fff">AJ</div>
-        <div class="px-4 py-4 text-center">
-          <h3 class="font-display text-base font-bold text-ink">Mr. Anekant Jain</h3>
-          <p class="mt-1 text-xs font-medium text-ink-soft">Vice-Principal, Suncity School</p>
-        </div>
-      </article>
-      <article class="speaker-slide">
-        <div class="speaker-photo flex aspect-[4/3] items-center justify-center font-display text-xl font-bold text-white/70" style="background:linear-gradient(155deg,#A2D729,#00AEEF);color:#0B3D2E">+</div>
-        <div class="px-4 py-4 text-center">
-          <h3 class="font-display text-base font-bold text-ink">To Be Announced</h3>
-          <p class="mt-1 text-xs font-medium text-ink-soft">More speakers coming soon</p>
-        </div>
-      </article>
-      <article class="speaker-slide">
-        <div class="speaker-photo flex aspect-[4/3] items-center justify-center font-display text-xl font-bold" style="background:linear-gradient(155deg,#0B3D2E,#145C46);color:#fff">+</div>
-        <div class="px-4 py-4 text-center">
-          <h3 class="font-display text-base font-bold text-ink">To Be Announced</h3>
-          <p class="mt-1 text-xs font-medium text-ink-soft">More speakers coming soon</p>
-        </div>
-      </article>
-    </div>
-    <div class="mt-8 flex flex-wrap justify-center gap-3">
-      <a href="#pricing" class="btn btn-violet btn-shine">Reserve Your Seat</a>
-      <a href="#contact" class="btn btn-ghost-light">View All Speakers</a>
-    </div>
-  </div>
-</section>
-</div>
-
 <!-- ============ PRICING ============ -->
 <div id="pricing" class="scroll-mt-[72px]">
-<section class="section bg-navy !py-12">
+<section class="section bg-navy">
   <div class="shell">
     <div data-reveal class="section-head-center mb-8 translate-y-3 opacity-0 transition duration-700 ease-out">
       <div class="mb-3 flex justify-center">
@@ -1582,63 +792,78 @@
     </div>
 
     <div data-reveal class="mx-auto grid max-w-5xl translate-y-3 items-stretch gap-4 opacity-0 transition duration-700 ease-out md:grid-cols-2">
-      <div class="plan flex h-full flex-col rounded-2xl border border-white/12 bg-white p-4 sm:p-5">
-        <div class="grid grid-cols-[1fr_auto] items-start gap-x-4 gap-y-1">
-          <h3 class="font-display text-xl font-bold tracking-tight text-ink">Academic Pass</h3>
-          <div class="row-span-3 text-right">
+      <div class="plan flex h-full flex-col rounded-2xl border border-white/12 bg-white p-5 sm:p-6">
+        <div class="flex items-start justify-between gap-3 sm:gap-5">
+          <div class="min-w-0">
+            <h3 class="font-display text-xl font-bold tracking-tight text-ink">Academic Pass</h3>
+            <span class="plan-early">Early bird offer is ending soon</span>
+          </div>
+          <div class="shrink-0 text-right">
             <div class="price-was text-xs">₹12,999</div>
             <div class="price-now text-xl leading-none">₹5,999</div>
-            <div class="mt-1 text-[10px] text-ink-soft">+ taxes · Early bird special</div>
+            <div class="mt-1 text-[10px] text-ink-soft">+ taxes</div>
           </div>
-          <p class="text-sm font-medium text-ink/80">For Schools &amp; Counsellors</p>
-          <p class="text-[12px] leading-snug text-ink-soft">School owners, principals, directors &amp; career counsellors.</p>
         </div>
-        <ul class="my-4 grid flex-1 grid-cols-1 gap-x-4 gap-y-1.5 sm:grid-cols-2">
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> Full 2-day conference access</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> All masterclasses &amp; case clinics</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> Leadership dialogue sessions</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> 2 conference lunches</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> 2 networking hi-tea sessions</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> Curated delegate kit</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> EIL Professional Certificate</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> Delegate memento</li>
-          <li class="plan-feature text-[12px] text-ink sm:col-span-2"><span class="tick-green">✓</span> Curated networking with education leaders</li>
+        <div class="mt-4 border-t border-line pt-3">
+          <p class="text-sm font-semibold text-ink">For Schools &amp; Counsellors</p>
+          <p class="mt-0.5 text-[12px] leading-snug text-ink-soft">School owners, principals, directors &amp; career counsellors.</p>
+        </div>
+        <ul class="mt-4 grid flex-1 grid-cols-1 gap-x-5 gap-y-2 border-t border-line pt-4 sm:grid-cols-2">
+          <li class="plan-feature"><span class="tick-green">✓</span>Full 2-day conference access</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>All masterclasses &amp; case clinics</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>Leadership dialogue sessions</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>2 conference lunches</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>2 networking hi-tea sessions</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>Curated delegate kit</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>E.I.L. Professional Certificate</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>Delegate memento</li>
+          <li class="plan-feature sm:col-span-2"><span class="tick-green">✓</span>Curated networking with education leaders</li>
         </ul>
-        <a href="#contact" class="btn btn-violet btn-sm mt-auto w-full">Reserve Academic Pass</a>
+        <a href="https://pages.razorpay.com/eil-conference-academic-pass" target="_blank" rel="noopener noreferrer" class="btn btn-violet btn-sm mt-5 w-full">Reserve Academic Pass</a>
+        <p class="mt-2 text-center text-[11px] font-medium text-ink-soft">Secure payment powered by Razorpay</p>
       </div>
 
-      <div class="plan flex h-full flex-col rounded-2xl border border-white/12 bg-white p-4 sm:p-5">
-        <div class="grid grid-cols-[1fr_auto] items-start gap-x-4 gap-y-1">
-          <h3 class="font-display text-xl font-bold tracking-tight text-ink">Corporate Pass</h3>
-          <div class="row-span-3 text-right">
+      <div class="plan flex h-full flex-col rounded-2xl border border-white/12 bg-white p-5 sm:p-6">
+        <div class="flex items-start justify-between gap-3 sm:gap-5">
+          <div class="min-w-0">
+            <h3 class="font-display text-xl font-bold tracking-tight text-ink">Corporate Pass</h3>
+            <span class="plan-early">Early bird offer is ending soon</span>
+          </div>
+          <div class="shrink-0 text-right">
             <div class="price-was text-xs">₹24,999</div>
             <div class="price-now text-xl leading-none">₹15,999</div>
-            <div class="mt-1 text-[10px] text-ink-soft">+ taxes · Early bird special</div>
+            <div class="mt-1 text-[10px] text-ink-soft">+ taxes</div>
           </div>
-          <p class="text-sm font-medium text-ink/80">For Institutions &amp; Corporates</p>
-          <p class="text-[12px] leading-snug text-ink-soft">Universities, colleges, corporates &amp; education consultants.</p>
         </div>
-        <ul class="my-4 grid flex-1 grid-cols-1 gap-x-4 gap-y-1.5 sm:grid-cols-2">
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> Full 2-day conference access</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> All masterclasses &amp; case clinics</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> Leadership dialogue sessions</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> 2 conference lunches</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> 2 networking hi-tea sessions</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> Curated delegate kit</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> EIL Professional Certificate</li>
-          <li class="plan-feature text-[12px] text-ink"><span class="tick-green">✓</span> Delegate memento</li>
-          <li class="plan-feature text-[12px] text-ink sm:col-span-2"><span class="tick-green">✓</span> Curated networking with education leaders</li>
+        <div class="mt-4 border-t border-line pt-3">
+          <p class="text-sm font-semibold text-ink">For Institutions &amp; Corporates</p>
+          <p class="mt-0.5 text-[12px] leading-snug text-ink-soft">Universities, colleges, corporates &amp; education consultants.</p>
+        </div>
+        <ul class="mt-4 grid flex-1 grid-cols-1 gap-x-5 gap-y-2 border-t border-line pt-4 sm:grid-cols-2">
+          <li class="plan-feature"><span class="tick-green">✓</span>Full 2-day conference access</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>All masterclasses &amp; case clinics</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>Leadership dialogue sessions</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>2 conference lunches</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>2 networking hi-tea sessions</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>Curated delegate kit</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>E.I.L. Professional Certificate</li>
+          <li class="plan-feature"><span class="tick-green">✓</span>Delegate memento</li>
+          <li class="plan-feature sm:col-span-2"><span class="tick-green">✓</span>Curated networking with education leaders</li>
         </ul>
-        <a href="#contact" class="btn btn-violet btn-sm mt-auto w-full">Reserve Corporate Pass</a>
+        <a href="https://rzp.io/rzp/eil-conference-corporate-pass" target="_blank" rel="noopener noreferrer" class="btn btn-violet btn-sm mt-5 w-full">Reserve Corporate Pass</a>
+        <p class="mt-2 text-center text-[11px] font-medium text-ink-soft">Secure payment powered by Razorpay</p>
       </div>
     </div>
 
-    <div data-reveal class="mx-auto mt-4 flex max-w-4xl translate-y-3 flex-col items-start justify-between gap-3 rounded-2xl border border-white/12 bg-white/[0.04] px-5 py-4 opacity-0 transition duration-700 ease-out sm:flex-row sm:items-center">
-      <div>
-        <h3 class="font-display text-base font-bold text-white">Group Bookings?</h3>
-        <p class="mt-0.5 text-sm text-white/65">Contact us for customised group rates.</p>
+    <div data-reveal class="relative mx-auto mt-6 flex w-full max-w-5xl translate-y-3 flex-col items-start justify-between gap-6 overflow-hidden rounded-2xl border border-gold/50 bg-black/30 px-6 py-7 opacity-0 shadow-[inset_0_1px_0_rgba(162,215,41,0.35),0_0_0_1px_rgba(162,215,41,0.08)] backdrop-blur-md transition duration-700 ease-out sm:flex-row sm:items-center sm:px-9 sm:py-8">
+      <div class="pointer-events-none absolute inset-x-8 top-0 h-px bg-linear-to-r from-transparent via-gold to-transparent" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute inset-y-0 left-0 w-1 bg-gold" aria-hidden="true"></div>
+      <div class="relative z-10 min-w-0 pl-3 sm:pl-2">
+        <p class="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">Schools &amp; teams</p>
+        <h3 class="font-display text-[1.45rem] font-bold tracking-tight text-white sm:text-[1.65rem]">Bring a group. <span class="text-gold">Unlock custom rates.</span></h3>
+        <p class="mt-2 text-[13px] leading-normal text-white/75 sm:whitespace-nowrap">Two or more delegates from one institution? We’ll tailor pricing for your team.</p>
       </div>
-      <a href="#contact" class="btn btn-sm btn-violet shrink-0">Contact Us</a>
+      <a href="#contact" class="relative z-10 btn btn-violet btn-shine w-full shrink-0 sm:w-auto">Get Group Rates →</a>
     </div>
   </div>
 </section>
@@ -1650,81 +875,64 @@
   <div class="shell">
     <div data-reveal class="grid translate-y-3 items-stretch gap-8 opacity-0 transition duration-700 ease-out lg:grid-cols-2 lg:gap-10">
       <div class="flex h-full flex-col">
-        <div class="mb-5">
+        <div class="mb-5 lg:min-h-[5.75rem]">
           <span class="badge badge-light mb-3"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">FAQs</span></span>
           <h2 class="section-title">Frequently Asked Questions.</h2>
         </div>
-        <div class="grid flex-1 content-start gap-2.5 sm:grid-cols-2">
-          <div data-faq-item class="overflow-hidden rounded-xl border border-line bg-cream/40">
-            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-3.5 py-3 text-left font-display text-[13px] font-medium leading-snug text-ink">
-              <span>How does pricing and registration work?</span>
-              <span data-faq-icon class="shrink-0 font-mono text-base text-navy transition-transform duration-200">+</span>
-            </button>
-            <div data-faq-panel class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-              <div class="overflow-hidden"><p class="px-3.5 pb-3 text-sm text-ink-soft">Reach out via the contact details and the EIL team will respond with tier pricing, availability and next steps.</p></div>
-            </div>
-          </div>
-          <div data-faq-item class="overflow-hidden rounded-xl border border-line bg-cream/40">
-            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-3.5 py-3 text-left font-display text-[13px] font-medium leading-snug text-ink">
+        <div class="flex flex-1 flex-col overflow-hidden rounded-2xl border border-line bg-cream/50">
+          <div data-faq-item class="border-b border-line">
+            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-5 py-4 text-left font-display text-[13px] font-medium leading-snug text-ink">
               <span>Who is EIL Conference 2026 for?</span>
               <span data-faq-icon class="shrink-0 font-mono text-base text-navy transition-transform duration-200">+</span>
             </button>
             <div data-faq-panel class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-              <div class="overflow-hidden"><p class="px-3.5 pb-3 text-sm text-ink-soft">Career counsellors, school principals, admissions professionals and education leadership teams.</p></div>
+              <div class="overflow-hidden"><p class="px-5 pb-4 text-sm text-ink-soft">Career counsellors, school principals, admissions professionals and education leadership teams.</p></div>
             </div>
           </div>
-          <div data-faq-item class="overflow-hidden rounded-xl border border-line bg-cream/40 sm:col-span-2">
-            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-3.5 py-3 text-left font-display text-[13px] font-medium leading-snug text-ink">
-              <span>What's the difference between the Academic and Corporate passes?</span>
-              <span data-faq-icon class="shrink-0 font-mono text-base text-navy transition-transform duration-200">+</span>
-            </button>
-            <div data-faq-panel class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-              <div class="overflow-hidden"><p class="px-3.5 pb-3 text-sm text-ink-soft">Both passes include the same full 2-day access and inclusions. Academic Pass (₹5,999 + taxes) is for school owners, principals, directors and career counsellors. Corporate Pass (₹15,999 + taxes) is for universities, colleges, corporates and education consultants.</p></div>
-            </div>
-          </div>
-          <div data-faq-item class="overflow-hidden rounded-xl border border-line bg-cream/40">
-            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-3.5 py-3 text-left font-display text-[13px] font-medium leading-snug text-ink">
-              <span>Will sessions be recorded?</span>
-              <span data-faq-icon class="shrink-0 font-mono text-base text-navy transition-transform duration-200">+</span>
-            </button>
-            <div data-faq-panel class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-              <div class="overflow-hidden"><p class="px-3.5 pb-3 text-sm text-ink-soft">Case clinics and masterclasses are kept off-camera. Delegates receive conference proceedings instead.</p></div>
-            </div>
-          </div>
-          <div data-faq-item class="overflow-hidden rounded-xl border border-line bg-cream/40">
-            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-3.5 py-3 text-left font-display text-[13px] font-medium leading-snug text-ink">
+          <div data-faq-item class="border-b border-line">
+            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-5 py-4 text-left font-display text-[13px] font-medium leading-snug text-ink">
               <span>What's included in a delegate seat?</span>
               <span data-faq-icon class="shrink-0 font-mono text-base text-navy transition-transform duration-200">+</span>
             </button>
             <div data-faq-panel class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-              <div class="overflow-hidden"><p class="px-3.5 pb-3 text-sm text-ink-soft">Full 2-day access, lunch buffet, certificate, memento and kit-bag.</p></div>
+              <div class="overflow-hidden"><p class="px-5 pb-4 text-sm text-ink-soft">Full 2-day access, lunch buffet, certificate, memento and kit-bag.</p></div>
             </div>
           </div>
-          <div data-faq-item class="overflow-hidden rounded-xl border border-line bg-cream/40 sm:col-span-2">
-            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-3.5 py-3 text-left font-display text-[13px] font-medium leading-snug text-ink">
+          <div data-faq-item class="border-b border-line">
+            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-5 py-4 text-left font-display text-[13px] font-medium leading-snug text-ink">
+              <span>What's the difference between the Academic and Corporate passes?</span>
+              <span data-faq-icon class="shrink-0 font-mono text-base text-navy transition-transform duration-200">+</span>
+            </button>
+            <div data-faq-panel class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+              <div class="overflow-hidden"><p class="px-5 pb-4 text-sm text-ink-soft">Both passes include the same full 2-day access and inclusions. Academic Pass (₹5,999 + taxes) is for school owners, principals, directors and career counsellors. Corporate Pass (₹15,999 + taxes) is for universities, colleges, corporates and education consultants.</p></div>
+            </div>
+          </div>
+          <div data-faq-item class="flex-1">
+            <button type="button" data-faq-trigger aria-expanded="false" class="flex w-full cursor-pointer items-center justify-between gap-3 px-5 py-4 text-left font-display text-[13px] font-medium leading-snug text-ink">
               <span>Do you arrange travel and accommodation?</span>
               <span data-faq-icon class="shrink-0 font-mono text-base text-navy transition-transform duration-200">+</span>
             </button>
             <div data-faq-panel class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
-              <div class="overflow-hidden"><p class="px-3.5 pb-3 text-sm text-ink-soft">Delegates book their own travel and stay. Recommended hotels near the venue are shared on request.</p></div>
+              <div class="overflow-hidden"><p class="px-5 pb-4 text-sm text-ink-soft">Delegates book their own travel and stay. Recommended hotels near the venue are shared on request.</p></div>
             </div>
           </div>
         </div>
       </div>
 
       <div id="contact" class="flex h-full min-h-0 scroll-mt-[72px] flex-col">
-        <div class="mb-5">
-          <span class="badge badge-light mb-3"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">Contact Information</span></span>
+        <div class="mb-5 lg:min-h-[5.75rem]">
+          <span class="badge badge-light mb-3"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">Contact</span></span>
           <h2 class="section-title">Get In Touch.</h2>
         </div>
-        <div class="rounded-2xl border border-line bg-cream/50 px-4">
-          <div class="divide-y divide-line">
-            <div class="flex items-center justify-between gap-4 py-3"><span class="text-sm text-ink-soft">Phone</span><a href="tel:+918800785157" class="text-sm font-semibold text-ink">+91 88007 85157</a></div>
-            <div class="flex items-center justify-between gap-4 py-3"><span class="text-sm text-ink-soft">Instagram</span><a href="https://instagram.com/eilconference" class="text-sm font-semibold text-ink">@eilconference</a></div>
-            <div class="flex items-center justify-between gap-4 py-3"><span class="text-sm text-ink-soft">Email</span><a href="mailto:info@eilconference.com" class="text-sm font-semibold text-ink">info@eilconference.com</a></div>
-            <div class="flex items-start justify-between gap-4 py-3">
-              <span class="text-sm text-ink-soft">Venue</span>
-              <div class="text-right text-sm font-semibold text-ink">Radisson Hotel,<br>Udyog Vihar, Gurugram</div>
+        <div class="flex flex-1 flex-col overflow-hidden rounded-2xl border border-line bg-cream/50">
+          <div class="flex flex-1 flex-col items-start justify-between gap-1 border-b border-line px-5 py-4 sm:flex-row sm:items-center sm:gap-4"><span class="text-sm text-ink-soft">Phone</span><a href="tel:+918800785157" class="text-sm font-semibold text-ink">+91 88007 85157</a></div>
+          <div class="flex flex-1 flex-col items-start justify-between gap-1 border-b border-line px-5 py-4 sm:flex-row sm:items-center sm:gap-4"><span class="text-sm text-ink-soft">Instagram</span><a href="https://instagram.com/eilconference" class="text-sm font-semibold text-ink" target="_blank" rel="noopener noreferrer">@eilconference</a></div>
+          <div class="flex flex-1 flex-col items-start justify-between gap-1 border-b border-line px-5 py-4 sm:flex-row sm:items-center sm:gap-4"><span class="text-sm text-ink-soft">Email</span><a href="mailto:info@eilconference.com" class="text-sm font-semibold text-ink">info@eilconference.com</a></div>
+          <div class="flex flex-1 flex-col items-start justify-between gap-2 px-5 py-4 sm:flex-row sm:items-center sm:gap-4">
+            <span class="text-sm text-ink-soft">Venue</span>
+            <div class="text-left sm:text-right">
+              <div class="text-sm font-semibold leading-snug text-ink">Radisson Hotel, Udyog Vihar, Gurugram</div>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Radisson+Hotel+Udyog+Vihar+Gurugram" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-[13px] font-semibold text-navy underline-offset-2 hover:underline">Google Maps →</a>
             </div>
           </div>
         </div>
@@ -1740,14 +948,16 @@
   <div class="shell">
     <div data-reveal class="mx-auto mb-8 max-w-2xl translate-y-3 text-center opacity-0 transition duration-700 ease-out">
       <div class="mb-3 flex justify-center">
-        <span class="badge badge-dark"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">Partner With EIL</span></span>
+        <span class="badge badge-dark"><span class="badge-dot" aria-hidden="true"></span><span class="badge-title">Partner With E.I.L.</span></span>
       </div>
-      <h2 class="section-title-light !text-[1.4rem] sm:!text-[1.6rem]">Enter the School-Decision Ecosystem.</h2>
+      <h2 class="section-title-light !text-[1.4rem] sm:!text-[1.6rem]">Enter the School-Decision Making Ecosystem.</h2>
     </div>
     <ul data-reveal class="partner-list translate-y-3 opacity-0 transition duration-700 ease-out">
       <li><span class="partner-stat">200+</span><span class="partner-label">Decision-makers in one room</span></li>
-      <li><span class="partner-stat">2</span><span class="partner-label">Days of focused learning</span></li>
+      <li><span class="partner-stat">15+</span><span class="partner-label">Speakers your brand shares the stage with</span></li>
+      <li><span class="partner-stat">2</span><span class="partner-label">Days of focused visibility</span></li>
       <li><span class="partner-stat">10+</span><span class="partner-label">Sessions you can apply</span></li>
+      <li><span class="partner-stat">8</span><span class="partner-label">Roles that shape student decisions</span></li>
       <li><span class="partner-stat">NCR+</span><span class="partner-label">Top schools, national reach</span></li>
     </ul>
     <div class="mt-8 text-center">
@@ -1755,36 +965,56 @@
     </div>
   </div>
 </section>
+</main>
 </div>
 
 <!-- ============ FOOTER ============ -->
-<footer class="site-footer relative overflow-hidden pt-12 pb-8">
-  <div class="site-footer-photo" aria-hidden="true"></div>
-  <div class="site-footer-veil" aria-hidden="true"></div>
-  <div class="shell relative z-10">
-    <div class="mb-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-      <div class="max-w-sm">
-        <a href="#home" class="mb-3 inline-flex items-center gap-2.5 font-sans text-lg font-semibold tracking-tight text-white">
-          <span class="logo-mark flex size-8 items-center justify-center rounded-lg bg-linear-[145deg] from-gold to-violet font-sans text-xs font-semibold text-navy">EI</span>
-          EIL Conference
+<footer class="site-footer border-t border-white/10 pt-12 pb-8">
+  <div class="shell">
+    <div class="flex flex-col items-center text-center lg:grid lg:grid-cols-12 lg:items-start lg:gap-10 lg:text-left">
+      <div class="flex max-w-sm flex-col items-center lg:col-span-5 lg:max-w-none lg:items-start">
+        <a href="#home" class="site-logo" aria-label="e.i.L Conference home">
+          <img src="./images/eil-logo-light.png" alt="e.i.L Conference" width="1024" height="221">
         </a>
-        <p class="font-sans text-sm leading-relaxed text-white/65">A national conference for education leaders and career counsellors.</p>
+        <p class="mt-5 font-display text-[1.35rem] font-bold leading-snug tracking-tight text-white">Where student futures are decided.</p>
+        <p class="mt-2 font-sans text-sm leading-relaxed text-white/55">School leaders and career counsellors. One room.</p>
+        <p class="mt-3 text-[12px] font-medium tracking-wide text-gold/90">Organised by Guby Rogers</p>
       </div>
-      <nav class="flex flex-wrap gap-x-5 gap-y-2 font-sans text-sm" aria-label="Footer">
-        <a href="#why" class="footer-link">Why EIL</a>
-        <a href="#schedule" class="footer-link">Schedule</a>
-        <a href="#speakers" class="footer-link">Speakers</a>
-        <a href="#pricing" class="footer-link">Passes</a>
-        <a href="#faq" class="footer-link">FAQ</a>
-        <a href="#partner" class="footer-link">Partner</a>
-        <a href="mailto:info@eilconference.com" class="footer-link">Contact</a>
-      </nav>
+
+      <div class="mt-10 grid w-full max-w-lg grid-cols-1 gap-8 sm:grid-cols-3 lg:col-span-7 lg:mt-0 lg:max-w-none lg:gap-6">
+        <nav aria-label="Footer">
+          <p class="mb-3.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/35">Explore</p>
+          <div class="flex flex-col items-center gap-2.5 lg:items-start">
+            <a href="#schedule" class="footer-link">Schedule</a>
+            <a href="#speakers" class="footer-link">Speakers</a>
+            <a href="#pricing" class="footer-link">Passes</a>
+            <a href="#partner" class="footer-link">Partners</a>
+            <a href="#faq" class="footer-link">FAQ</a>
+          </div>
+        </nav>
+        <div>
+          <p class="mb-3.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/35">Visit</p>
+          <p class="text-sm leading-relaxed text-white/70">18–19 September 2026</p>
+          <p class="mt-1.5 text-sm leading-relaxed text-white/70">Radisson Hotel,<br>Udyog Vihar, Gurugram</p>
+        </div>
+        <div>
+          <p class="mb-3.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-white/35">Contact</p>
+          <a href="#contact" class="footer-link">Get in touch</a>
+          <a href="mailto:info@eilconference.com" class="footer-link mt-2.5 block">info@eilconference.com</a>
+          <a href="tel:+918800785157" class="footer-link mt-2.5 block">+91 88007 85157</a>
+        </div>
+      </div>
     </div>
 
-    <hr class="border-0 border-t border-white/15">
-    <div class="mt-5 flex flex-wrap items-center justify-between gap-2 font-sans text-xs text-white/50">
-      <span>© 2026 EIL Conference. All rights reserved.</span>
-      <span>18–19 September 2026 · Radisson Hotel, Gurugram</span>
+    <hr class="mt-10 border-0 border-t border-white/10">
+    <div class="mt-5 flex flex-col items-center gap-4 lg:flex-row lg:items-center lg:justify-between">
+      <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2" aria-label="Legal">
+        <a href="./terms/" class="footer-link text-xs">Terms</a>
+        <a href="./privacy-policy/" class="footer-link text-xs">Privacy</a>
+        <a href="./refund-policy/" class="footer-link text-xs">Refunds</a>
+        <a href="./delivery-policy/" class="footer-link text-xs">Delivery</a>
+      </nav>
+      <p class="font-sans text-xs text-white/40">© 2026 EIL Conference. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -1849,6 +1079,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, { threshold: 0.12 });
     revealed.forEach((el) => observer.observe(el));
+    window.setTimeout(() => revealed.forEach(show), 2800);
   } else {
     revealed.forEach(show);
   }
@@ -1870,16 +1101,6 @@ document.addEventListener('DOMContentLoaded', () => {
       setFaq(item, willOpen);
     });
   });
-
-  // ===== Contact form =====
-  const form = document.querySelector('[data-contact-form]');
-  if (form) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      form.querySelector('[data-form-success]').hidden = false;
-    });
-  }
 
   // ===== Schedule tabs =====
   const scheduleTabs = document.querySelectorAll('[data-schedule-tab]');
