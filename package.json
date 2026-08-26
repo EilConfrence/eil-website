@@ -1,0 +1,24 @@
+{
+  "name": "eil-website-eil",
+  "version": "1.0.0",
+  "description": "Official website for EIL Conference 2026 — Education · Innovation · Leadership.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i css/eil.css -o css/eil.built.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EilConfrence/eil-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EilConfrence/eil-website/issues"
+  },
+  "homepage": "https://github.com/EilConfrence/eil-website#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

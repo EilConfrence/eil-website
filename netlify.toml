@@ -1,0 +1,7 @@
+# Static site — no build step. Free Netlify plan is enough.
+[build]
+  publish = "."
+  command = ""
+
+[build.environment]
+  NODE_VERSION = "22"
