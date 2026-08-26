@@ -19,6 +19,7 @@
   "homepage": "https://github.com/EilConfrence/eil-website#readme",
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4.3.3"
   }
 }

@@ -1240,7 +1240,7 @@
     z-index: 0;
     background-size: cover;
     background-position: center;
-    background-image: url('../images/hero-conference.jpg?v=banquet');
+    background-image: image-set( url('../images/hero-conference.webp?v=opt') type('image/webp'), url('../images/hero-conference.jpg?v=opt') type('image/jpeg') );
     filter: blur(2.5px) saturate(1);
     transform: scale(1.04);
     animation: hero-drift 32s ease-in-out infinite alternate;
