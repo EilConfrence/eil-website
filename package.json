@@ -4,7 +4,8 @@
   "description": "Official website for EIL Conference 2026 — Education · Innovation · Leadership.",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i css/eil.css -o css/eil.built.css"
+    "build:css": "tailwindcss -i css/eil.css -o css/eil.built.css",
+    "sync-schema": "node scripts/sync-schema.mjs"
   },
   "repository": {
     "type": "git",

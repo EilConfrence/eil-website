@@ -1,0 +1,58 @@
+{
+  "siteUrl": "https://eilconference.com",
+  "siteName": "EIL Conference",
+  "locale": "en_IN",
+  "ogImage": "https://eilconference.com/images/og-share.jpg",
+  "ogImageWidth": 1200,
+  "ogImageHeight": 630,
+  "ogImageAlt": "e.i.L Conference",
+  "logo": "https://eilconference.com/images/eil-logo.png",
+  "themeColor": "#0B3D2E",
+  "googleSiteVerification": "",
+  "organization": {
+    "name": "Guby Rogers",
+    "alternateName": ["EIL Conference", "e.i.L Conference"],
+    "url": "https://eilconference.com/",
+    "description": "Organiser of EIL Conference, a national in-person conference for education leaders and career counsellors.",
+    "email": "info@eilconference.com",
+    "telephone": "+91-8800785157",
+    "address": {
+      "streetAddress": "Sushant Lok-1",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "postalCode": "122009",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/eilconference/"
+    ]
+  },
+  "event": {
+    "name": "EIL Conference 2026",
+    "url": "https://eilconference.com/",
+    "description": "A national conference for education leaders and career counsellors. 18-19 September 2026, Radisson Hotel, Udyog Vihar, Gurugram.",
+    "startDate": "2026-09-18",
+    "endDate": "2026-09-19",
+    "locationName": "Radisson Hotel, Udyog Vihar, Gurugram",
+    "locationAddress": {
+      "streetAddress": "Udyog Vihar",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    },
+    "offers": [
+      {
+        "name": "Academic Pass",
+        "url": "https://pages.razorpay.com/eil-conference-academic-pass",
+        "price": "5999",
+        "priceCurrency": "INR"
+      },
+      {
+        "name": "Corporate Pass",
+        "url": "https://rzp.io/rzp/eil-conference-corporate-pass",
+        "price": "15999",
+        "priceCurrency": "INR"
+      }
+    ]
+  }
+}
