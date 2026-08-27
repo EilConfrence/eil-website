@@ -900,17 +900,17 @@
     --tw-ease: var(--ease-out);
     transition-timing-function: var(--ease-out);
   }
-  .selection\:bg-violet ::selection {
-    background-color: var(--color-violet);
+  .selection\:bg-gold ::selection {
+    background-color: var(--color-gold);
   }
-  .selection\:bg-violet::selection {
-    background-color: var(--color-violet);
+  .selection\:bg-gold::selection {
+    background-color: var(--color-gold);
   }
-  .selection\:text-white ::selection {
-    color: var(--color-white);
+  .selection\:text-navy ::selection {
+    color: var(--color-navy);
   }
-  .selection\:text-white::selection {
-    color: var(--color-white);
+  .selection\:text-navy::selection {
+    color: var(--color-navy);
   }
   @media (hover: hover) {
     .hover\:underline:hover {
