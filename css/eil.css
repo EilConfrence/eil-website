@@ -609,11 +609,11 @@
     @apply inline-flex shrink-0 items-center;
   }
   .site-logo img{
-    @apply h-[26px] w-auto max-w-[min(12rem,54vw)] object-contain object-left
-           sm:h-[30px] sm:max-w-[14rem] lg:h-[34px] lg:max-w-[16.5rem];
+    @apply h-[26px] w-auto max-w-[min(13.5rem,58vw)] object-contain object-left
+           sm:h-[30px] sm:max-w-[16rem] lg:h-[34px] lg:max-w-[18.5rem];
   }
   .site-footer .site-logo img{
-    @apply h-9 max-w-[15rem] sm:h-10 sm:max-w-[17rem];
+    @apply h-9 max-w-[17rem] sm:h-10 sm:max-w-[20rem];
   }
 
   /* ---------- Partner strip & countdown ---------- */
@@ -823,7 +823,7 @@
     .badge{ @apply whitespace-normal text-center leading-snug; }
     .btn{ @apply px-5 py-3.5; }
     .nav-bar-cta{ @apply px-3 py-2 text-[11px]; }
-    .nav-main .site-logo img{ @apply max-w-[min(7.75rem,36vw)]; }
+    .nav-main .site-logo img{ @apply max-w-[min(9.5rem,48vw)]; }
     .speaker-grid{ @apply gap-3; }
     .speaker-slide{ @apply w-[calc(50%-0.375rem)] rounded-xl; }
     .partner-list{ @apply grid-cols-2; }
