@@ -839,5 +839,8 @@
     }
     .slot{ @apply grid-cols-1 gap-1.5 py-3; }
     .slot-time{ @apply pt-0; }
+    .site-footer{
+      @apply pt-9 pb-7;
+    }
   }
 }
