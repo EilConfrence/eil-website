@@ -6,12 +6,15 @@
   "ogImageWidth": 1200,
   "ogImageHeight": 630,
   "ogImageAlt": "e.i.L Conference",
-  "logo": "https://eilconference.com/images/eil-logo.png",
+  "logo": "https://eilconference.com/images/eil-logo.png?v=9",
   "themeColor": "#0B3D2E",
   "googleSiteVerification": "",
   "organization": {
     "name": "Guby Rogers",
-    "alternateName": ["EIL Conference", "e.i.L Conference"],
+    "alternateName": [
+      "EIL Conference",
+      "e.i.L Conference"
+    ],
     "url": "https://eilconference.com/",
     "description": "Organiser of EIL Conference, a national in-person conference for education leaders and career counsellors.",
     "email": "contact@eilconference.com",

@@ -337,14 +337,8 @@
   .inline-block {
     display: inline-block;
   }
-  .aspect-\[4\/3\] {
-    aspect-ratio: 4/3;
-  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
-  }
-  .h-auto {
-    height: auto;
   }
   .h-full {
     height: 100%;
@@ -366,9 +360,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .\!max-w-none {
-    max-width: none !important;
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
@@ -589,9 +580,6 @@
   .to-transparent {
     --tw-gradient-to: transparent;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .object-cover {
-    object-fit: cover;
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
@@ -1011,9 +999,6 @@
   @media (width >= 48rem) {
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .md\:whitespace-nowrap {
-      white-space: nowrap;
     }
   }
   @media (width >= 64rem) {
@@ -2967,30 +2952,30 @@
   .site-logo img {
     height: 26px;
     width: auto;
-    max-width: min(12rem, 54vw);
+    max-width: min(13.5rem, 58vw);
     object-fit: contain;
     object-position: left;
     @media (width >= 40rem) {
       height: 30px;
     }
     @media (width >= 40rem) {
-      max-width: 14rem;
+      max-width: 16rem;
     }
     @media (width >= 64rem) {
       height: 34px;
     }
     @media (width >= 64rem) {
-      max-width: 16.5rem;
+      max-width: 18.5rem;
     }
   }
   .site-footer .site-logo img {
     height: calc(var(--spacing) * 9);
-    max-width: 15rem;
+    max-width: 17rem;
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 10);
     }
     @media (width >= 40rem) {
-      max-width: 17rem;
+      max-width: 20rem;
     }
   }
   .partner-item {
@@ -3872,7 +3857,7 @@
       font-size: 11px;
     }
     .nav-main .site-logo img {
-      max-width: min(7.75rem, 36vw);
+      max-width: min(9.5rem, 48vw);
     }
     .speaker-grid {
       gap: calc(var(--spacing) * 3);
